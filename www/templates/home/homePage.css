@@ -71,10 +71,33 @@
 
 .voiceBtn{
   float: right;
-  z-index: 100;
+  z-index: 10;
 
 }
 
-.homeBtn{
-  z-index: 100;
+
+.myButtonMap {
+  position: relative;
+  z-index: 10;
+  cursor:pointer;
+  height: 70px;
+  border: none;
+}
+
+.myButtonInfo {
+  margin-left: -20px;
+  position: relative;
+  z-index: 10;
+  cursor:pointer;
+  height: 70px;
+  border: none;
+}
+
+.myButtonVoice {
+  float: right;
+  position: relative;
+  z-index: 10;
+  cursor:pointer;
+  height: 70px;
+  border: none;
 }

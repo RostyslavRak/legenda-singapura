@@ -10,9 +10,14 @@
     <link href="css/style.css" rel="stylesheet">
 
 
-
+    <!-- compiled css -->
     <link href="templates/home/homePage.css" rel="stylesheet">
     <link href="templates/story1/storyOne.css" rel="stylesheet">
+    <link href="templates/story2/storyTwo.css" rel="stylesheet">
+    <link href="templates/story3/storyThree.css" rel="stylesheet">
+    <link href="templates/story4/storyFour.css" rel="stylesheet">
+    <link href="templates/story5/storyFive.css" rel="stylesheet">
+    <link href="templates/story6/storySix.css" rel="stylesheet">
 
 
 
@@ -22,6 +27,10 @@
     <script src="lib/ngCordova/ng-cordova.js"></script>
     <script src="lib/angular-audio/app/angular.audio.js"></script>
     <script src="lib/angular-video-background/src/video-background.module.js"></script>
+
+
+
+
 
     <!-- cordova script (this will be a 404 during development) -->
     <!--<script src="cordova.js"></script>-->
@@ -34,10 +43,16 @@
 
 
   <body ng-app="LegendSingapore" ng-controller="HomeController">
-      <div class="controls"><button class="button button-clear icon voiceBtn" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause()"></button></div>
+
+  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()"/>
+
+  <input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()"/>
+
+  <input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
 
 
-      <a class="button button-clear button-icon icon ion-android-home homeBtn" ng-click="goHome()"></a>
+
+
 
 
 
@@ -46,6 +61,7 @@
     </ion-nav-view>
 
     <script src="templates/home/homeController.js"></script>
+    <script src="templates/info/infoController.js"></script>
     <script src="templates/story1/storyOneController.js"></script>
     <script src="templates/story2/storyTwoController.js"></script>
     <script src="templates/story3/storyThreeController.js"></script>
@@ -53,5 +69,7 @@
     <script src="templates/story5/storyFiveController.js"></script>
     <script src="templates/story6/storySixController.js"></script>
     <script src="templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoiceController.js"></script>
+
+
   </body>
 </html>

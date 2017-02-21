@@ -1,23 +1,31 @@
 
   angular.module('LegendSingapore.home.ctrl', [])
-  .controller('HomeController', function ($scope, $ionicPlatform,ngAudio,$state,$cordovaVibration) {
+
+  .controller('HomeController', function ($scope, $ionicModal, $ionicPlatform,ngAudio,$state,$cordovaVibration) {
 
     $scope.duration = 100;
-
-    $scope.tracks = [
+    $scope.tracks =
       {
-        audio: ngAudio.load('audio/The_Master.mp3')
-      }
-    ];
-    $scope.track = $scope.tracks[0].audio;
-    $scope.track.volume = 0.01;
-     // $scope.track.play();
+        audio: ngAudio.load('audio/Home.mp3')
+      };
+    $scope.track = $scope.tracks.audio;
+    $scope.track.volume = 1;
+    $scope.track.play();
+
 
     $scope.goHome = function () {
       $state.go('home');
       console.log("vibrating");
       $cordovaVibration.vibrate($scope.duration);
-    }
+    };
+
+
+      $ionicModal.fromTemplateUrl('templates/info/info.html', {
+        scope: $scope
+      }).then(function(modal) {
+        $scope.modal = modal;
+      });
+
 
 
 

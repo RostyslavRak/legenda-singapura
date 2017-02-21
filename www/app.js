@@ -8,6 +8,7 @@
 
     // modules
     'LegendSingapore.home.ctrl',
+    'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
@@ -36,11 +37,7 @@
     .config(function($stateProvider, $urlRouterProvider) {
 
       $stateProvider
-        .state('index', {
-          url: '/',
-          abstract: true,
-          templateUrl: 'templates/home/header.html',
-        })
+
         .state('home', {
           url: '/home',
           templateUrl: 'templates/home/home.html',
@@ -66,29 +63,55 @@
           templateUrl: 'templates/story2/storyTwo.html',
           controller: 'storyTwoController'
         })
+        .state('videoStory2', {
+          url: '/story-twe/videoStory2',
+          templateUrl: 'templates/story2/video/videoStoryTwo.html'
+        })
+
+
         .state('story-three', {
           url: '/story-three',
           templateUrl: 'templates/story3/story-three.html',
            controller: 'storyThreeController'
         })
+
+        .state('videoStory3', {
+          url: '/story-three/videoStory3',
+          templateUrl: 'templates/story3/video/videoStoryThree.html'
+        })
+
+
         .state('story-four', {
           url: '/story-four',
           templateUrl: 'templates/story4/story-four.html',
         controller: 'storyFourController'
         })
+
+
         .state('story-five', {
           url: '/story-five',
           templateUrl: 'templates/story5/story-five.html',
            controller: 'storyFiveController'
         })
-        .state('story-six', {
-          url: '/story-six',
-          templateUrl: 'templates/story6/story-six.html',
-          controller: 'storySixController'
+
+        .state('videoStory5', {
+          url: '/story-five/videoStory5',
+          templateUrl: 'templates/story5/video/videoStoryFive.html'
+        })
+
+
+          .state('story-six', {
+            url: '/story-six',
+            templateUrl: 'templates/story6/story-six.html',
+            controller: 'storySixController'
+          })
+
+        .state('videoStory6', {
+          url: '/story-six/videoStory6',
+          templateUrl: 'templates/story6/video/videoStorySix.html'
         });
 
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });
-

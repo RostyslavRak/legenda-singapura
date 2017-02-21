@@ -2,14 +2,6 @@
 <ion-view>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">&nbsp;</div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <h1>AngularJS 1.5.x Multi-Step Form</h1>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-sm-9 col-md-8">
         <form name="multiStepForm" class="form-validation" role="form" novalidate>
           <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
@@ -18,7 +10,6 @@
               <button type="button" class="btn btn-primary" ng-click="next('stage1')">Start</button>
             </div>
             <div class="animate-switch" ng-switch-when="stage1">
-              <h1>stage1</h1>
               <button type="button" class="btn btn-info" ng-click="back('')">Back</button>
               <button type="button" class="btn btn-primary" ng-click="next('stage2')">Next</button>
             </div>
