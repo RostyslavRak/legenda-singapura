@@ -1,5 +1,5 @@
 angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
-  .controller('videoStoryOneRecordVoiceController',  ['$scope',  function($scope) {
+  .controller('videoStoryOneRecordVoiceController', 'ngAudio', ['$scope',  function($scope) {
 
   $scope.formParams = {};
   $scope.stage = "";
@@ -58,5 +58,17 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     $scope.formParams = {};
     $scope.stage = "";
   };
+
+    $scope.duration = 100;
+    $scope.voices =
+      {
+        audio: ngAudio.load('audio/The_Master.mp3'),
+        audio1: ngAudio.load('audio/The_Master.mp3')
+      };
+
+        $scope.voice = $scope.voices.audio;
+    $scope.voice.volume = 0.1;
+    // $scope.track.play();
+
 
 }]);
