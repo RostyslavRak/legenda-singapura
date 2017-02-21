@@ -1,0 +1,80 @@
+.bagHomePage{
+  background: url(img/Map.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.story6{
+  cursor: pointer;
+  width: 35%;
+  margin-left: 37%;
+  margin-top: -12%;
+}
+
+.story5{
+  cursor: pointer;
+  width: 35%;
+  margin-left: 59%;
+  margin-top: -10%;
+}
+
+.story4{
+  cursor: pointer;
+  width: 30%;
+  margin-left: 55%;
+  margin-top: -12%;
+}
+
+.story3{
+  cursor: pointer;
+  width: 30%;
+  margin-left: 37%;
+  margin-top: -15%;
+}
+
+.story2{
+  cursor: pointer;
+  width: 25%;
+  margin-left: 16%;
+  margin-top: 4%;
+}
+
+.story1{
+  cursor: pointer;
+  width: 25%;
+  margin-left: 11%;
+  margin-top: -8%;
+}
+
+.story1-1{
+  cursor: pointer;
+  width: 25%;
+  margin-left: -19%;
+  margin-top: -8%;
+}
+
+
+.ShipMain{
+  width: 25%;
+  margin-left: -67%;
+  margin-top: -6%;
+}
+
+
+.SwordFishMain{
+  width: 17%;
+  margin-left: 38%;
+  margin-top: -40%;
+}
+
+.voiceBtn{
+  float: right;
+  z-index: 100;
+
+}
+
+.homeBtn{
+  z-index: 100;
+}

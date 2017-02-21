@@ -1,0 +1,27 @@
+.bagStory1Page{
+  background: url(img/story1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Btn1Story1{
+  margin-left: 15%;
+  margin-top: 30%;
+}
+
+.Btn2Story1{
+  margin-left: 8%;
+  margin-top: 2%;
+}
+
+.Btn3Story1{
+  margin-left: 14%;
+  margin-top: 2%;
+}
+
+.videoStoryOne{
+  width: 100%;
+  margin-top: -12%;
+}

@@ -1,0 +1,27 @@
+
+
+
+.video-pai {
+  height:90vh;
+  position:relative;
+  overflow:hidden;
+}
+
+.video-bg {
+  position:absolute;
+  /*   top:0; */
+}
+
+.wrapper-ajust {
+  position:absolute;
+  width:100%;
+  top:0;
+  z-index:99;
+
+}
+
+.box {
+  background:red;
+  width:300px;
+  height:400px;
+}
