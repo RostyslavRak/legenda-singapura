@@ -57,6 +57,6 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     // Clean up scope before destorying
     $scope.formParams = {};
     $scope.stage = "";
-  }
+  };
 
 }]);
