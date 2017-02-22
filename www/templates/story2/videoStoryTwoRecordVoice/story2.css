@@ -1,0 +1,226 @@
+/*story 1*/
+.box_story_1, .animate-switch, .animate-switch-container {
+    min-height: 320px;
+    height:100%;
+    width:100%;
+}
+
+.buttons0 {
+    margin-top: 8%;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*.buttons1 {*/
+    /*background: transparent;*/
+    /*border: none;*/
+    /*float: left;*/
+    /*width: 12%;*/
+    /*position: absolute;*/
+    /*bottom: 5px;*/
+/*}*/
+.buttons1:hover, .buttons2:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+.buttons2 {
+    background: transparent;
+    border: none;
+    float: right;
+    width: 12%;
+}
+.buttons01 {
+    position: absolute;
+    margin-top: 302px;
+    margin-left: -15px;
+    float: left;
+    width: 90%;
+}
+.position {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50%;
+    background-size: cover;
+}
+.story0_s2 {
+    background-image: url(image/Scena_1.png);
+}
+.story1_1_s2 {
+    background-image: url(image/Scena_1.png);
+}
+.story2_1_s2 {
+    background-image: url(image/Scena_2.png);
+}
+.story3_1_s2 {
+    background-image: url(image/Scene1.jpg);
+}
+.story4_1_s2 {
+    background-image: url(image/Scene2.jpg);
+}
+.story5_1_s2 {
+    background-image: url(image/Scene3.jpg);
+}
+.story6_1_s2 {
+
+    background-image: url(image/scene4.jpg);
+}
+.story7_1_s2 {
+
+    background-image: url(image/Scene5B.jpg);
+}
+
+.story8_1_s2 {
+
+    background-image: url(image/Scene6.jpg);
+}
+.story9_1_s2 {
+
+    background-image: url(image/Scene7.jpg);
+}
+.story10_1_s2 {
+
+    background-image: url(image/Scene8.jpg);
+}
+.story11_1_s2 {
+
+    background-image: url(image/Scene9.jpg);
+}
+.story12_1_s2 {
+
+    background-image: url(image/Scene10.jpg);
+}
+.story13_1_s2 {
+
+    background-image: url(image/Scene11.jpg);
+}
+.story14_1_s2 {
+
+    background-image: url(image/Scene12.jpg);
+}
+.story15_1_s2 {
+
+    background-image: url(image/Scene13.jpg);
+}
+.story16_1_s2 {
+
+    background-image: url(image/Scene14.jpg);
+}
+.story17_1_s2 {
+
+    background-image: url(image/Scene8.jpg);
+}
+.text_frame1 {
+    width: 129px;
+    margin-top: 200px;
+    margin-left: 40px;
+    font-size: 12px;
+    padding: 11px 17px;
+    height: 44px;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url(image/bg_text.png);
+}
+.dialog_box {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 17px;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url(image/bg_dialog.png);
+}
+.dialog_box_sc_2 {
+    width: 123px;
+    margin-top: 200px;
+    margin-left: 38%;
+    font-size: 12px;
+    padding: 3px 17px;
+    height: 44px;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url(image/bg_text.png);
+}
+p.dialog_box_text1 {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+}
+p.dialog_box_text2 {
+    padding-top: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+.game_box {
+    width: 150px;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 18%;
+}
+.game_box_button {
+    margin: 3px;
+    width: 100%;
+    font-size: 12px;
+    padding: 12px 36px;
+    text-align: center;
+    height: 40px;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url(image/game_button_s2.jpg);
+}
+.game_box_button_text {
+    color: black;
+}
+.game_box_button:hover {
+    transform: scale(1.2,1.5)
+}
+.text_frame1:hover, .text_frame2:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.text_dialog_box {
+
+}
+.text_frame2 {
+    position: absolute;
+    width: 129px;
+    margin-top: 200px;
+    float: left;
+    font-size: 12px;
+    margin-left: 72%;
+    padding: 11px 36px;
+    height: 44px;
+    background-size: 100% 100%;
+    background-image: url(image/bg_text.png);
+
+
+    /*width: 129px;*/
+    /*margin-top: 200px;*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*margin-left: 300px;*/
+    /*padding: 11px 36px;*/
+    /*height: 44px;*/
+    /*background-size: 100% 100%;*/
+    /*background-image: url(image/bg_text.png);*/
+}
+/*.bagHomePage_R{*/
+/*background: url(image/s1_SN07_R03.jpg) no-repeat center center fixed;*/
+/*-webkit-background-size: cover;*/
+/*-moz-background-size: cover;*/
+/*-o-background-size: cover;*/
+/*background-size: cover;*/
+/*}*/
+
+
+
+
+
+
+
+
+

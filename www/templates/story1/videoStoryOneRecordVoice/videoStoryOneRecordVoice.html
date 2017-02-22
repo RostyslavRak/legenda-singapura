@@ -1,242 +1,242 @@
 <ion-view>
   <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
   <div class="container">
-      <div class="box_story_1">
-        <form name="multiStepForm" class="form-validation" role="form" novalidate>
-          <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
-            <!--Story 1 - page 0-->
-            <div class="animate-switch story0" ng-switch-default>
-              <div class="buttons0">
+    <div class="box_story_1">
+      <form name="multiStepForm" class="form-validation" role="form" novalidate>
+        <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
+          <!--Story 1 - page 0-->
+          <div class="animate-switch position story0" ng-switch-default>
+            <div class="buttons0">
               <button type="button" class="btn buttons1 " ng-click="next('stage1')">Start</button>
-                </div>
             </div>
-            <!--Story 1 - page 1-->
-            <div class="animate-switch story1_1"  ng-switch-when="stage1">
-              <div class="text_frame1">
-                <p>Sang Nila Utama</p>
-              </div>
-              <div class="text_frame2">
-                <p>Mamanda</p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn  buttons1" ng-click="back('')">Back</button>
-                <button type="button" class="btn  buttons2" ng-click="next('stage2')">Next</button>
-              </div>
+          </div>
+          <!--Story 1 - page 1-->
+          <div class="animate-switch position story1_1"  ng-switch-when="stage1">
+            <div class="text_frame1">
+              <p>Sang Nila Utama</p>
             </div>
+            <div class="text_frame2">
+              <p>Mamanda</p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn  buttons1" ng-click="back('')">Back</button>
+              <button type="button" class="btn  buttons2" ng-click="next('stage2')">Next</button>
+            </div>
+          </div>
 
-            <!--Story 1 - page 2-->
+          <!--Story 1 - page 2-->
 
-            <div class="animate-switch story2_1"  ng-switch-when="stage2">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  Mamanda, pulau apakah itu? Sungguh indah” tanya Sang Nila Utama.<br>
-                  “ Itulah Temasek Tuanku.” Jawab Mamanda.<br>
-                  “ Mari kita ke sana!” titah Sang Nila Utama
-                </p>
-              </div>
-                            <div class="buttons0">
+          <div class="animate-switch position story2_1"  ng-switch-when="stage2">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Mamanda, pulau apakah itu? Sungguh indah” tanya Sang Nila Utama.<br>
+                “ Itulah Temasek Tuanku.” Jawab Mamanda.<br>
+                “ Mari kita ke sana!” titah Sang Nila Utama
+              </p>
+            </div>
+            <div class="buttons0">
               <button type="button" class="btn buttons1" ng-click="back('stage1')">Back</button>
               <button type="button" class="btn buttons2" ng-click="next('stage3')">Next</button>
-                </div>
             </div>
-            <!--Story 1 - page 3-->
+          </div>
+          <!--Story 1 - page 3-->
 
-            <div class="animate-switch story3_1"  ng-switch-when="stage3">
-              <div class="dialog_box">
+          <div class="animate-switch position story3_1"  ng-switch-when="stage3">
+            <div class="dialog_box">
               <p class="dialog_box_text1">
                 Angin bertiup <strong style="color: red">kencang.</strong><br>
                 Laut semakin <strong style="color: red">bergelora.</strong>
               </p>
-              </div>
-                            <div class="buttons0">
+            </div>
+            <div class="buttons0">
               <button type="button" class="btn buttons1" ng-click="back('stage2')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage4')">Next</button>
-                </div>
+              <button type="button" class="btn buttons2" ng-click="next('stage3a')">Next</button>
             </div>
-            <!--Story 1 - page 4-->
-
-            <div class="animate-switch story4_1" ng-switch-when="stage3">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  Angin bertiup <strong style="color: red">kencang.</strong><br>
-                  Laut semakin <strong style="color: red">bergelora.</strong>
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage2')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage4')">Next</button>
-              </div>
-            </div>
-            <!--Story 1 - page 5-->
-
-            <div class="animate-switch story5_1" ng-switch-when="stage4">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  <strong style="color: red">Bahtera</strong>
-                  yang dinaiki Sang Nila Utama bagaikan mahu
-                  <strong style="color: red">karam.</strong>
-                  </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage5')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 6-->
-
-            <div class="animate-switch story6_1" ng-switch-when="stage5">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Tuanku semua barang dan <strong style="color: red">harta</strong>
-                  harta telah pun anak kapal buang ke laut,” Kata Mamanda. “Ampun Tuanku…” kata Mamanda.
-                           </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage4')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage6')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 7-->
-
-            <div class="animate-switch story7_1" ng-switch-when="stage6">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Ampun Tuanku, nampaknya tinggal <strong style="color: red">mahkota</strong>
-                  Tuanku sahaja yang belum dicampakkan ke laut ,” jelas Mamanda.
-                                 </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage5')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage7')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 8-->
-
-            <div class="animate-switch story8_1" ng-switch-when="stage7">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Mahkota beta?” Kata Sang Nila Utama terkejut.
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage6')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage8')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 9-->
-
-            <div class="animate-switch story9_1" ng-switch-when="stage8">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Jika ini dapat menyelamatkan kita, akan beta campakkan
-                  juga mahkota ini,” <br> titah Sang Nila Utama dengan
-                  <strong style="color: red">rendah hati.</strong>
-
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage7')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage9')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 10-->
-
-            <div class="animate-switch story10_1" ng-switch-when="stage9">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  Sebaik-baik sahaja mahkota itu dilontar ke laut, keadaan kembali tenang.
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage8')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage10')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 11-->
-
-            <div class="animate-switch story11_1" ng-switch-when="stage10">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  Sang Nila Utama dan anak-anak kapalnya selamat
-                  <strong style="color: red">mendarat</strong> di Pulau Temasek.
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage9')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage11')">Next</button>
-              </div>
-            </div>
-
-
-            <!--Story 1 - page 12-->
-
-            <div class="animate-switch story12_1" ng-switch-when="stage11">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  Setibanya di Temasek…
-
-                  <strong style="color: red">mendarat</strong> di Pulau Temasek.
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage10')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage12')">Next</button>
-              </div>
-            </div>
-
-            <!--Story 1 - page 13-->
-
-            <div class="animate-switch story13_1" ng-switch-when="stage12">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Binatang apakah itu? Adakah ia harimau atau serigala?” <br>
-                  Tanya Sang Nila Utama
-                  <strong style="color: red">terpegun</strong> .
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage11')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage13')">Next</button>
-              </div>
-            </div>
- <!--Story 1 - page 14-->
-
-            <div class="animate-switch story14_1" ng-switch-when="stage13">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Ia sungguh   <strong style="color: red">gagah</strong>!” Kata Sang Nila Utama.
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage12')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage14')">Next</button>
-              </div>
-            </div>
- <!--Story 1 - page 15-->
-
-            <div class="animate-switch story15_1" ng-switch-when="stage14">
-              <div class="dialog_box">
-                <p class="dialog_box_text1">
-                  “Kalau begitu, beta  <strong style="color: red">namakan</strong>
-                  pulau ini Singapura!” Titah Sang Nila Utama yang <strong style="color: red">bawa nasib</strong> mencari negara baharu.
-
-                </p>
-              </div>
-              <div class="buttons0">
-                <button type="button" class="btn buttons1" ng-click="back('stage13')">Back</button>
-                <button type="button" class="btn buttons2" ng-click="next('stage1')">Next</button>
-              </div>
-            </div>
-
           </div>
-        </form>
-      </div>
+          <!--Story 1 - page 4-->
+
+          <div class="animate-switch position story4_1" ng-switch-when="stage3a">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Angin bertiup <strong style="color: red">kencang.</strong><br>
+                Laut semakin <strong style="color: red">bergelora.</strong>
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage4')">Next</button>
+            </div>
+          </div>
+          <!--Story 1 - page 5-->
+
+          <div class="animate-switch position story5_1" ng-switch-when="stage4">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                <strong style="color: red">Bahtera</strong>
+                yang dinaiki Sang Nila Utama bagaikan mahu
+                <strong style="color: red">karam.</strong>
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage5')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 6-->
+
+          <div class="animate-switch position story6_1" ng-switch-when="stage5">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Tuanku semua barang dan <strong style="color: red">harta</strong>
+                harta telah pun anak kapal buang ke laut,” Kata Mamanda. “Ampun Tuanku…” kata Mamanda.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage4')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage6')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 7-->
+
+          <div class="animate-switch position story7_1" ng-switch-when="stage6">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Ampun Tuanku, nampaknya tinggal <strong style="color: red">mahkota</strong>
+                Tuanku sahaja yang belum dicampakkan ke laut ,” jelas Mamanda.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage5')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage7')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 8-->
+
+          <div class="animate-switch position story8_1" ng-switch-when="stage7">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Mahkota beta?” Kata Sang Nila Utama terkejut.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage6')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage8')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 9-->
+
+          <div class="animate-switch position story9_1" ng-switch-when="stage8">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Jika ini dapat menyelamatkan kita, akan beta campakkan
+                juga mahkota ini,” <br> titah Sang Nila Utama dengan
+                <strong style="color: red">rendah hati.</strong>
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage7')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage9')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 10-->
+
+          <div class="animate-switch position story10_1" ng-switch-when="stage9">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Sebaik-baik sahaja mahkota itu dilontar ke laut, keadaan kembali tenang.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage8')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage10')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 11-->
+
+          <div class="animate-switch position story11_1" ng-switch-when="stage10">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Sang Nila Utama dan anak-anak kapalnya selamat
+                <strong style="color: red">mendarat</strong> di Pulau Temasek.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage9')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage11')">Next</button>
+            </div>
+          </div>
+
+
+          <!--Story 1 - page 12-->
+
+          <div class="animate-switch position story12_1" ng-switch-when="stage11">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Setibanya di Temasek…
+
+                <strong style="color: red">mendarat</strong> di Pulau Temasek.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage10')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage12')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - page 13-->
+
+          <div class="animate-switch position story13_1" ng-switch-when="stage12">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Binatang apakah itu? Adakah ia harimau atau serigala?” <br>
+                Tanya Sang Nila Utama
+                <strong style="color: red">terpegun</strong> .
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage11')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage13')">Next</button>
+            </div>
+          </div>
+          <!--Story 1 - page 14-->
+
+          <div class="animate-switch position story14_1" ng-switch-when="stage13">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Ia sungguh   <strong style="color: red">gagah</strong>!” Kata Sang Nila Utama.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage12')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage14')">Next</button>
+            </div>
+          </div>
+          <!--Story 1 - page 15-->
+
+          <div class="animate-switch position story15_1" ng-switch-when="stage14">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Kalau begitu, beta  <strong style="color: red">namakan</strong>
+                pulau ini Singapura!” Titah Sang Nila Utama yang <strong style="color: red">bawa nasib</strong> mencari negara baharu.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage13')">Back</button>
+              <button type="button" class="btn buttons2" ng-click="next('stage1')">Next</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
     </div>
+  </div>
 </ion-view>
 

@@ -1,5 +1,5 @@
 
 angular.module('LegendSingapore.storyTwo.ctrl', [])
-.controller('storyTwoController', ['$scope', function($scope) {
+.controller('storyTwoController',['$scope', '$ionicModal', function($scope,$ionicModal,$state) {
 
 }]);

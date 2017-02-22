@@ -11,6 +11,8 @@
     'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
+    'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
+    'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
@@ -63,11 +65,15 @@
           templateUrl: 'templates/story2/storyTwo.html',
           controller: 'storyTwoController'
         })
-        .state('videoStory2', {
-          url: '/story-twe/videoStory2',
-          templateUrl: 'templates/story2/video/videoStoryTwo.html'
-        })
-
+          .state('videoStory2', {
+            url: '/story-two/videoStory2',
+            templateUrl: 'templates/story2/video/videoStoryTwo.html'
+          })
+          .state('videoStoryTwoRecordVoice', {
+            url: '/story-two/videoStoryTwoRecordVoice',
+            templateUrl: 'templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoice.html',
+            controller: 'videoStoryTwoRecordVoiceController'
+          })
 
         .state('story-three', {
           url: '/story-three',
@@ -79,6 +85,11 @@
           url: '/story-three/videoStory3',
           templateUrl: 'templates/story3/video/videoStoryThree.html'
         })
+          .state('videoStoryThreeRecordVoice', {
+            url: '/story-two/videoStoryTreeRecordVoice',
+            templateUrl: 'templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoice.html',
+            controller: 'videoStoryThreeRecordVoiceController'
+          })
 
 
         .state('story-four', {
@@ -115,3 +126,4 @@
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });
+
