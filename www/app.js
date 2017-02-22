@@ -11,17 +11,15 @@
     'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
+    'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
+    'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
+    'LegendSingapore.videoStoryFourRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
     'LegendSingapore.storyFive.ctrl',
     'LegendSingapore.storySix.ctrl'
   ])
-
-
-
-
-
 
 
     .run(function ($ionicPlatform) {
@@ -74,11 +72,15 @@
           templateUrl: 'templates/story2/storyTwo.html',
           controller: 'storyTwoController'
         })
-        .state('videoStory2', {
-          url: '/story-twe/videoStory2',
-          templateUrl: 'templates/story2/video/videoStoryTwo.html'
-        })
-
+          .state('videoStory2', {
+            url: '/story-twe/videoStory2',
+            templateUrl: 'templates/story2/video/videoStoryTwo.html'
+          })
+          .state('videoStoryTwoRecordVoice', {
+            url: '/story-two/videoStoryTwoRecordVoice',
+            templateUrl: 'templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoice.html',
+            controller: 'videoStoryTwoRecordVoiceController'
+          })
 
         .state('story-three', {
           url: '/story-three',
@@ -90,6 +92,11 @@
           url: '/story-three/videoStory3',
           templateUrl: 'templates/story3/video/videoStoryThree.html'
         })
+          .state('videoStoryThreeRecordVoice', {
+            url: '/story-three/videoStoryTreeRecordVoice',
+            templateUrl: 'templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoice.html',
+            controller: 'videoStoryThreeRecordVoiceController'
+          })
 
 
         .state('story-four', {
@@ -97,6 +104,15 @@
           templateUrl: 'templates/story4/story-four.html',
         controller: 'storyFourController'
         })
+          .state('videoStory4', {
+            url: '/story-four/videoStory4',
+            templateUrl: 'templates/story4/video/videoStoryFour.html'
+          })
+          .state('videoStoryFourRecordVoice', {
+            url: '/story-four/videoStoryFourRecordVoice',
+            templateUrl: 'templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoice.html',
+            controller: 'videoStoryFourRecordVoiceController'
+          })
 
 
         .state('story-five', {
@@ -126,5 +142,3 @@
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });
-
-

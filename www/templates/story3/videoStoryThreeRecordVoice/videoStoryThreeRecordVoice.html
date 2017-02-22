@@ -1,0 +1,279 @@
+<ion-view>
+  <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
+  <div class="container">
+    <div class="box_story_3">
+      <form name="multiStepForm" class="form-validation" role="form" novalidate>
+        <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
+          <!--Story 3 - page title-->
+          <div class="animate-switch position story0_s3" ng-switch-default>
+            <div class="title_s3">
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1 " ng-click="next('stage1')">Start</button>
+            </div>
+          </div>
+          <!--Story 3 - story1_1_s3 --- page intro-->
+          <div class="animate-switch position story1_1_s3"  ng-switch-when="stage1">
+
+            <div class="buttons0">
+              <button type="button" class="btn  buttons1" ng-click="back('')">Back</button>
+              <button type="button" class="btn  buttons3" ng-click="next('stage2')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story2_1_s3 -Mulakan Cerita---->
+
+          <div class="animate-switch position story2_1_s3"  ng-switch-when="stage2">
+            <div class="dialog_box_sc_3">
+              <p class="dialog_box_text1">
+                Mulakan Cerita
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage1')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage3')">Next</button>
+            </div>
+          </div>
+          <!--Story 3 - story3_1_s3 -->
+
+          <div class="animate-switch position story3_1_s3"  ng-switch-when="stage3">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Radin Mas berasa <strong style="color: red">sedih</strong>.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage2')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage3a')">Next</button>
+            </div>
+          </div>
+          <!--Story 3 - story4_1_s3-->
+
+          <div class="animate-switch position story4_1_s3" ng-switch-when="stage3a">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Ayahanda, Pangeran Agung, telah lama hilang entah ke mana.<br>
+                Radin Mas ialah <strong style="color: red">anak emas</strong> kepada Pangeran Agung.
+                            </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage4')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story5_1_s3 -->
+
+          <div class="animate-switch position story5_1_s3" ng-switch-when="stage4">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Apalah nasibku ini. Ayahanda telah hilang. Aku  <strong style="color: red">dipaksa</strong><br>
+                ibu tiri untuk berkahwin dengan Tengku Bagus.” Kata Radin Mas.<br>
+                Tiba-tiba…
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage3a')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage5')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story6_1_s3-->
+
+          <div class="animate-switch position story6_1_s3" ng-switch-when="stage5">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Mari ikut Tengku Cik. Tengku Cik tahu di mana Ayahanda.” <br>
+                Kata Tengku Cik yang <strong style="color: red">berkaki ayam</strong>.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage4')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage6')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story7_1_s3-->
+
+          <div class="animate-switch position story7_1_s3" ng-switch-when="stage6">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Radin Mas berasa sedih melihat keadaan ayahanda berada dalam <strong style="color: red">kurungan</strong>.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage5')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage7')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story8_1_s3-->
+
+          <div class="animate-switch position story8_1_s3" ng-switch-when="stage7">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Keesokan harinya, Radin Mas meminta <strong style="color: red">bantuan</strong> kawan-kawan ayahandanya.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage6')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage8')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story9_1_s3-->
+
+          <div class="animate-switch position story9_1_s3" ng-switch-when="stage8">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Pangeran Agung berjaya diselamatkan.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage7')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage9')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - page 10-->
+
+          <div class="animate-switch position story10_1_s3" ng-switch-when="stage9">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Tanpa berlengah-lengah lagi, Pangeran Agung pun segera mencari Tengku Bagus.<br>
+                Dia mahu mencari jalan tengah dan menegakkan <strong style="color: red">keadilan</strong> .
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage8')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage10')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story11_1_s3-->
+
+          <div class="animate-switch position story11_1_s3" ng-switch-when="stage10">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Melihat Pangeran Agung datang, Tengku Bagus terus
+                <strong style="color: red">menikam</strong> Pangeran Agung.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage9')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage11')">Next</button>
+            </div>
+          </div>
+
+
+          <!--Story 3 - page 12-->
+
+          <div class="animate-switch position story12_1_s3" ng-switch-when="stage11">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Ayahanda!” Jerit Radin Mas.
+                Radin Mas dengan pantas cuba <strong style="color: red">menghadang</strong>nya.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage10')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage12')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - page 13-->
+
+          <div class="animate-switch position story13_1_s3" ng-switch-when="stage12">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Tanpa Tengku Bagus sedari, dia telah<strong style="color: red">tertikam</strong> Radin Mas, bakal isterinya.
+
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage11')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage13')">Next</button>
+            </div>
+          </div>
+          <!--Story 3 - page 14-->
+
+          <div class="animate-switch position story14_1_s3" ng-switch-when="stage13">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Radin Mas!” jerit Tengku Bagus <strong style="color: red">menyesal</strong>.
+                Radin Mas <strong style="color: red">rebah</strong>lalu mati.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage12')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage14')">Next</button>
+            </div>
+          </div>
+          <!--Story 3 - story15_1_s3-->
+
+          <div class="animate-switch position story15_1_s3" ng-switch-when="stage14">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Pangeran Agung berasa sedih atas kematian anaknya.
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage13')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage15')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 1 - story16_1_s3-->
+
+          <div class="animate-switch position story16_1_s3" ng-switch-when="stage15">
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                “Radin Mas, anakanda telah selamatkan ayahanda daripada ditikam. <br>
+                Anakanda memang seorang anak yang <strong style="color: red">berjasa</strong> !” <br>
+                Kata Pangeran Agung dengan sedih.
+
+              </p>
+            </div>
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage14')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage16')">Next</button>
+            </div>
+          </div>
+
+          <!--Story 3 - story17_1_s3-->
+
+          <div class="animate-switch position story17_1_s3" ng-switch-when="stage16">
+            <div class="game_box_s3">
+              <div class="game_box_button_s3">
+                <p class="game_box_button_text_s3">KOSA KATA</p>
+              </div>
+              <div class="game_box_button_s3">
+                <p class="game_box_button_text_s3">PERIBAHASA</p>
+              </div>
+              <div class="game_box_button_s3">
+                <p class="game_box_button_text_s3">KEFAHAMAN</p>
+              </div>
+              <div class="game_box_button_s3">
+                <p class="game_box_button_text_s3">PANTUN</p>
+              </div>
+            </div>
+
+
+            <div class="buttons0">
+              <button type="button" class="btn buttons1" ng-click="back('stage15')">Back</button>
+              <button type="button" class="btn buttons3" ng-click="next('stage17')">Next</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-view>
+
