@@ -7,19 +7,19 @@
 }
 
 .Btn1Story1{
+  width: 100px;
+  height: 40px;
   margin-left: 15%;
   margin-top: 30%;
 }
 
-.Btn2Story1{
-  margin-left: 8%;
-  margin-top: 2%;
+.Btn2Story1,.Btn3Story1{
+  margin-left: 15%;
+  /*margin-top: 2%;*/
+  width: 100px;
+  height: 40px;
 }
 
-.Btn3Story1{
-  margin-left: 14%;
-  margin-top: 2%;
-}
 
 .videoStoryOne{
   width: 100%;

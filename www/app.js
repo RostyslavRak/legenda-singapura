@@ -13,6 +13,7 @@
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
     'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
+    'LegendSingapore.videoStoryFourRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
@@ -86,7 +87,7 @@
           templateUrl: 'templates/story3/video/videoStoryThree.html'
         })
           .state('videoStoryThreeRecordVoice', {
-            url: '/story-two/videoStoryTreeRecordVoice',
+            url: '/story-three/videoStoryTreeRecordVoice',
             templateUrl: 'templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoice.html',
             controller: 'videoStoryThreeRecordVoiceController'
           })
@@ -97,6 +98,15 @@
           templateUrl: 'templates/story4/story-four.html',
         controller: 'storyFourController'
         })
+          .state('videoStory4', {
+            url: '/story-four/videoStory4',
+            templateUrl: 'templates/story4/video/videoStoryFour.html'
+          })
+          .state('videoStoryFourRecordVoice', {
+            url: '/story-four/videoStoryFourRecordVoice',
+            templateUrl: 'templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoice.html',
+            controller: 'videoStoryFourRecordVoiceController'
+          })
 
 
         .state('story-five', {
