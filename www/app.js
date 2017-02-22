@@ -19,6 +19,11 @@
   ])
 
 
+
+
+
+
+
     .run(function ($ionicPlatform) {
 
       $ionicPlatform.ready(function () {
@@ -57,6 +62,12 @@
           templateUrl: 'templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoice.html',
           controller: 'videoStoryOneRecordVoiceController'
         })
+        .state('gameStoryOne', {
+          url: '/game/StoryOne',
+          templateUrl: 'templates/story1/gameStoryOne/gameStory1.html',
+          controller: 'GameStoryOneController'
+        })
+
 
         .state('story-two', {
           url: '/story-two',
@@ -115,3 +126,5 @@
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });
+
+

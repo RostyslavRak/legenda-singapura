@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>ionic LegendSingapore</title>
+
+
+    <script src="lib/jquery/jquery-1.10.2.js"></script>
+    <script src="lib/jquery/jquery-ui.js"></script>
+    <script src="lib/jquery/underscore-min.js"></script>
+
     <!-- compiled css output -->
     <link href="lib/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -20,6 +26,8 @@
     <link href="templates/story6/storySix.css" rel="stylesheet">
 
     <link href="templates/story1/videoStoryOneRecordVoice/story1.css" rel="stylesheet">
+    <link href="templates/story1/gameStoryOne/gameStory1.css" rel="stylesheet">
+
 
 
     <!-- ionic/angularjs js -->
@@ -45,7 +53,10 @@
 
   <body ng-app="LegendSingapore" ng-controller="HomeController">
 
+
   <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()"/>
+
+  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ui-sref="gameStoryOne"/>
 
   <input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()"/>
 
@@ -70,6 +81,7 @@
     <script src="templates/story5/storyFiveController.js"></script>
     <script src="templates/story6/storySixController.js"></script>
     <script src="templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoiceController.js"></script>
+    <script src="templates/story1/gameStoryOne/gameStoryOneController.js"></script>
 
 
   </body>

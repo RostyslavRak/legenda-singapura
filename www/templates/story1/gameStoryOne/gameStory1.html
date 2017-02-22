@@ -1,10 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+<ion-view>
+
+
+
+
+
+      <form name="multiStepForm" class="form-validation" role="form" novalidate>
+        <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
+          <div class="animate-switch game_start_story" ng-switch-default>
+            <div class="dialog_box">
+              <p class="dialog_box_text1">
+                Ayuh! Kita selamatkan bahtera ini daripada tenggelam.<br>
+                Eja dengan tepat. Campakkan ke laut!<br>
+                Jangan putus asa jika tersalah eja! Eja lagi.
+              </p>
+            </div>
+            <div class="buttonStartGame">
+              <button type="button" style="float: right" ng-click="next('stage1')">Mula</button>
+            </div>
+          </div>
+          <div class="animate-switch game_background_story_one" ng-switch-when="stage1">
+
+
+
+              <div id="draggableContainer" class="draggableContainer">
+                <div data-ng-repeat="item in draggableArray">
+                  <div dragme data-fruitname="{{item.fruitname}}" answerdata="{{item.fruitname}}" backgroundimage="{{item.fruitimg}}" myindex="$index" set-doraemon="setDoraemonStatus(value)"></div>
+                </div>
+              </div>
+              <div id="droppableContainer" class="droppableContainer">
+                <div data-ng-repeat="item in droppableArray | orderBy : 'id'">
+                  <div dropme data-fruitname="{{item.fruitname}}" backgroundimage="{{item.fruitimg}}" set-score="setScore(value)" remove-array="removeFromArray(value)"  set-doraemon="setDoraemonStatus(value)"></div>
+                </div>
+              </div>
+
+
+            <div class="dialog_box_game_one">
+              <p class="dialog_box_text1">
+                air laut yang berombak hebat
+              </p>
+            </div>
+            <!--<button type="button" class="btn btn-info" ng-click="back('')" style="margin-top: 100px">Back</button>-->
+            <!--<button type="button" class="btn btn-primary" ng-click="next('stage2')" style="margin-top: 100px">Next</button>-->
+          </div>
+
+        </div>
+      </form>
+
+</ion-view>
+
+
