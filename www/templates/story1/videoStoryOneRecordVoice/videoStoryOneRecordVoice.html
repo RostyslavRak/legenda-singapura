@@ -2,6 +2,12 @@
   <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
   <div class="container">
     <div class="box_story_1">
+          <audio id="audio1">
+
+        <source src="templates/story1/videoStoryOneRecordVoice/SNU-1.mp3">    Your browser isn't invited for super fun audio time.</source>
+
+      </audio>
+      <button class="audio1" ng-click="play()">Play Standart</button>
       <form name="multiStepForm" class="form-validation" role="form" novalidate>
         <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
           <!--Story 1 - page 0-->
@@ -27,7 +33,8 @@
           <!--Story 1 - page 2-->
 
           <div class="animate-switch position story2_1"  ng-switch-when="stage2">
-            <div class="dialog_box">
+
+                      <div class="dialog_box">
               <p class="dialog_box_text1">
                 Mamanda, pulau apakah itu? Sungguh indah” tanya Sang Nila Utama.<br>
                 “ Itulah Temasek Tuanku.” Jawab Mamanda.<br>

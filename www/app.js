@@ -15,6 +15,7 @@
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.videoStoryFourRecordVoice.ctrl',
     'LegendSingapore.videoStoryFiveRecordVoice.ctrl',
+    'LegendSingapore.videoStorySixRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
@@ -135,7 +136,12 @@
         .state('videoStory6', {
           url: '/story-six/videoStory6',
           templateUrl: 'templates/story6/video/videoStorySix.html'
-        });
+        })
+          .state('videoStorySixRecordVoice', {
+            url: '/story-six/videoStorySixRecordVoice',
+            templateUrl: 'templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoice.html',
+            controller: 'videoStorySixRecordVoiceController'
+          });
 
 
         // if none of the above states are matched, use this as the fallback
