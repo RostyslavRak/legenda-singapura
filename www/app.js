@@ -14,6 +14,7 @@
     'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.videoStoryFourRecordVoice.ctrl',
+    'LegendSingapore.videoStoryFiveRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
@@ -119,7 +120,11 @@
           url: '/story-five/videoStory5',
           templateUrl: 'templates/story5/video/videoStoryFive.html'
         })
-
+          .state('videoStoryFiveRecordVoice', {
+            url: '/story-five/videoStoryFiveRecordVoice',
+            templateUrl: 'templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoice.html',
+            controller: 'videoStoryFiveRecordVoiceController'
+          })
 
           .state('story-six', {
             url: '/story-six',

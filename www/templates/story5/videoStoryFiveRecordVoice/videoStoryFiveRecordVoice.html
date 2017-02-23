@@ -1,0 +1,288 @@
+<ion-view>
+    <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
+    <div class="container">
+        <div class="box_story_3">
+            <form name="multiStepForm" class="form-validation" role="form" novalidate>
+                <div class="animate-switch-container" ng-switch on="stage"
+                     ng-class="{forward: direction, backward:!direction}">
+                    <!--Story 3 - page title-->
+                    <div class="animate-switch position story0_s5" ng-switch-default>
+                        <div class="title_s5">
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1 " ng-click="next('stage1')">Start</button>
+                        </div>
+                    </div>
+                    <!--Story 3 - story1_1_s5 --- page intro-->
+                    <div class="animate-switch position story1_1_s5" ng-switch-when="stage1">
+                        <div class="text_frame1_s5">
+                            <p>Hang Nadim </p>
+                        </div>
+                        <div class="text_frame2_s5">
+                            <p>Baginda Raja </p>
+                        </div>
+
+                        <div class="buttons0">
+                            <button type="button" class="btn  buttons1" ng-click="back('')">Back</button>
+                            <button type="button" class="btn  buttons5" ng-click="next('stage2')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 5 - story2_1_s5 ----->
+
+                    <div class="animate-switch position story2_1_s5" ng-switch-when="stage2">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                “Ayuh ke pantai. Orang kita perlukan bantuan,” seru beberapa orang kampung.
+                                <br>
+                                “<strong style="color: red">Todak</strong> menyerang! Todak menyerang!”  Jerit orang-orang kampung.
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage1')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage3')">Next</button>
+                        </div>
+                    </div>
+                    <!--Story 5 - story3_1_s5 -->
+
+                    <div class="animate-switch position story3_1_s5" ng-switch-when="stage3">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Penduduk kampung cuba menahan serangan ikan todak.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage2')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage3a')">Next</button>
+                        </div>
+                    </div>
+                    <!--Story 3 - story4_1_s5-->
+
+                    <div class="animate-switch position story4_1_s5" ng-switch-when="stage3a">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Ada yang
+                                <strong style="color: red">berparang</strong> .
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage4')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 5 - story5_1_s5 -->
+
+                    <div class="animate-switch position story5_1_s5" ng-switch-when="stage4">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Ada yang <strong style="color: red">bertombak</strong>.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage3a')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage5')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 5 - story6_1_s5-->
+
+                    <div class="animate-switch position story6_1_s5" ng-switch-when="stage5">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Ada juga yang menggunakan dayung.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage4')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage6')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - story7_1_s5-->
+
+                    <div class="animate-switch position story7_1_s5" ng-switch-when="stage6">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Ada juga yang <strong style="color: red">otak udang</strong> menahan dengan <strong style="color: red">betis</strong> mereka.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage5')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage7')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - story8_1_s5-->
+
+                    <div class="animate-switch position story8_1_s5" ng-switch-when="stage7">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Ramai juga orang kampung yang mati.
+
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage6')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage8')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - story9_1_s5-->
+
+                    <div class="animate-switch position story9_1_s5" ng-switch-when="stage8">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Raja dan pembesar negeri dengan segera pergi ke tepi pantai.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage7')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage9')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - page 10-->
+
+                    <div class="animate-switch position story10_1_s5" ng-switch-when="stage9">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                <strong style="color: red">Baginda</strong> dan pembesar negeri <strong style="color: red">mati akal</strong>. Sudah penat mereka berfikir. <br>
+                                Mereka tidak tahu apa yang perlu dilakukan.
+
+                                Dia mahu mencari jalan tengah dan menegakkan  .
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage8')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage10')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 5 - story11_1_s5-->
+
+                    <div class="animate-switch position story11_1_s5" ng-switch-when="stage10">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                “Kasihan, tetapi ini bukan caranya,” kata Hang Nadim di dalam hati.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage9')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage11')">Next</button>
+                        </div>
+                    </div>
+
+
+                    <!--Story 3 - page 12-->
+
+                    <div class="animate-switch position story12_1_s5" ng-switch-when="stage11">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                “Ampun, Tuanku. Mengapa kita tidak menggunakan <strong style="color: red">batang</strong> pisang?<br>
+                                Kalau kita  <strong style="color: red">berkubukan</strong> betis, pasti lebih ramai penduduk kampung yang akan mati,” <br>
+                                kata Hang Nadim.
+
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage10')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage12')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - page 13-->
+
+                    <div class="animate-switch position story13_1_s5" ng-switch-when="stage12">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Baginda terpegun dengan <strong style="color: red">kebijaksanaan</strong> Hang Nadim.<br>
+                                “Bijak! Baik sungguh <strong style="color: red">cadangan</strong> kamu anak kecil,”puji Raja.<br>
+                                “Kamu memang  <strong style="color: red">tajam akal </strong>anak kecil. Siapakah nama kamu?” Tanya Raja.
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage11')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage13')">Next</button>
+                        </div>
+                    </div>
+                    <!--Story 3 - page 14-->
+
+                    <div class="animate-switch position story14_1_s5" ng-switch-when="stage13">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                “Nama hamba Hang Nadim, Tuanku!” Jawab Hang Nadim.<br>
+                                “Pandai sungguh Hang Nadim.” Raja berasa gembira.
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage12')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage14')">Next</button>
+                        </div>
+                    </div>
+                    <!--Story 3 - story15_1_s5-->
+
+                    <div class="animate-switch position story15_1_s5" ng-switch-when="stage14">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                “Baiklah, Beta perintahkan kita <strong style="color: red">gunakan</strong> batang pisang sekarang juga!” Titah Raja.
+
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage13')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage15')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 1 - story16_1_s5-->
+
+                    <div class="animate-switch position story16_1_s5" ng-switch-when="stage15">
+                        <div class="dialog_box">
+                            <p class="dialog_box_text1">
+                                Akhirnya, Singapura dapat diselamatkan daripada serangan todak oleh anak kecil yang bernama Hang Nadim.
+                            </p>
+                        </div>
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage14')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage16')">Next</button>
+                        </div>
+                    </div>
+
+                    <!--Story 3 - story17_1_s5-->
+
+                    <div class="animate-switch position story17_1_s5" ng-switch-when="stage16">
+                        <div class="game_box_s5">
+                            <div class="game_box_button_s5">
+                                <p class="game_box_button_text_s5">KOSA KATA</p>
+                            </div>
+                            <div class="game_box_button_s5">
+                                <p class="game_box_button_text_s5">PERIBAHASA</p>
+                            </div>
+                            <div class="game_box_button_s5">
+                                <p class="game_box_button_text_s5">KEFAHAMAN</p>
+                            </div>
+                            <div class="game_box_button_s5">
+                                <p class="game_box_button_text_s5">PANTUN</p>
+                            </div>
+                        </div>
+
+
+                        <div class="buttons0">
+                            <button type="button" class="btn buttons1" ng-click="back('stage15')">Back</button>
+                            <button type="button" class="btn buttons5" ng-click="next('stage17')">Next</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</ion-view>
+
