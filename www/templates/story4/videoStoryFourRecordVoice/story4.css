@@ -21,21 +21,21 @@
     /*position: absolute;*/
     /*bottom: 5px;*/
 /*}*/
-.buttons1:hover, .buttons3:hover {
+.buttons1:hover, .buttons4:hover {
     color: #ffffff;
     cursor: pointer;
 }
-.title_s3 {
+.title_s4 {
     z-index: 100;
-    width: 253px;
+    width: 90%;
     height: 150px;
-    margin-top: 24%;
-    margin-left: 46%;
-    background-image: url(image/text_s3.png);
+    margin-top: 41%;
+    margin-left: -10%;
+    background-image: url(image/text_s5.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.buttons3 {
+.buttons4 {
     background: transparent;
     border: none;
     float: right;
@@ -55,81 +55,100 @@
     background-position: 50%;
     background-size: cover;
 }
-.story0_s3 {
-    background-image: url(image/s3_SN1.jpg);
+.story0_s4 {
+    background-image: url(image/Scena_5.jpg);
 }
-.story1_1_s3 {
-    background-image: url(image/intro_s3.jpg);
-}
-.story2_1_s3 {
-    background-image: url(image/s3_BG.jpg);
-}
-.story3_1_s3 {
-    background-image: url(image/s3_SN1.jpg);
-}
-.story4_1_s3 {
-    background-image: url(image/s3_SN2_R01.jpg);
-}
-.story5_1_s3 {
-    background-image: url(image/s3_SN3.jpg);
-}
-.story6_1_s3 {
-
-    background-image: url(image/s3_SN4_A.jpg);
-}
-.story7_1_s3 {
-
-    background-image: url(image/s3_SN5_R01.jpg);
-}
-.story8_1_s3 {
-
-    background-image: url(image/S3_SN6.jpg);
+.story1_1_s4 {
+    background-image: url(image/Characters_5.jpg);
 
 }
-.story9_1_s3 {
-
-    background-image: url(image/S3_SN7.jpg);
+.story2_1_s4 {
+    background-image: url(image/Scena_5.jpg);
 }
-.story10_1_s3 {
-
-    background-image: url(image/S3_SN8_R02.jpg);
+.story3_1_s4 {
+    background-image: url(image/Scena_5_3.jpg);
 }
-.story11_1_s3 {
-
-    background-image: url(image/S3_SN9_R02.jpg);
+.story4_1_s4 {
+    background-image: url(image/Scena_5_3.jpg);
 }
-.story12_1_s3 {
-
-    background-image: url(image/S3_SN10_R02.jpg);
+.story5_1_s4 {
+    background-image: url(image/s5_SN4_R02.jpg);
 }
-.story13_1_s3 {
+.story6_1_s4 {
 
-    background-image: url(image/s3_SN11_R01.jpg);
+    background-image: url(image/s5_SN5_R03.jpg);
+}
+.story7_1_s4 {
+
+    background-image: url(image/s5_SN6_R01.jpg);
+}
+.story8_1_s4 {
+
+    background-image: url(image/s5_SN7_R01.jpg);
+
+}
+.story9_1_s4 {
+
+    background-image: url(image/s5_SN8_R02.jpg);
+}
+.story10_1_s4 {
+
+    background-image: url(image/s5_SN9_R01.jpg);
+}
+.story11_1_s4 {
+
+    background-image: url(image/s5_SN10_R02.jpg);
+}
+.story12_1_s4 {
+
+    background-image: url(image/s5_SN11_R02.jpg);
+}
+.story13_1_s4 {
+
+    background-image: url(image/s5_SN12_R02.jpg);
 }
 
-.story14_1_s3 {
+.story14_1_s4 {
 
-    background-image: url(image/s3_SN12_R01.jpg);
+    background-image: url(image/s5_SN13_R02.jpg);
 }
-.story15_1_s3 {
+.story15_1_s4 {
 
-    background-image: url(image/s3_SN13_R02.jpg);
+    background-image: url(image/s5_SN14_R02.jpg);
 }
-.story16_1_s3 {
+.story16_1_s4 {
 
-    background-image: url(image/s3_SN14.jpg);
+    background-image: url(image/Scena_5_18.jpg);
 }
-.story17_1_s3 {
+.story17_1_s4 {
 
-    background-image: url(image/s3_BG.jpg);
+    background-image: url(image/Scena_5_19.jpg);
+}
+.story18_1_s4 {
+    background-image: url(image/s5_SN17_R03.jpg);
+}
+.story19_1_s4 {
+
+    background-image: url(image/Scena_5_end.jpg);
+}
+.story20_1_s4 {
+
+    background-image: url(image/Scena_5_end.jpg);
+}
+.story21_1_s4 {
+
+    background-image: url(image/Scena_5_end.jpg);
 }
 
-.text_frame1 {
+
+
+
+.text_frame1_s4 {
     width: 129px;
     margin-top: 200px;
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 12px;
-    padding: 11px 17px;
+    padding: 11px 45px;
     height: 44px;
     float: left;
     background-size: 100% 100%;
@@ -167,13 +186,13 @@ p.dialog_box_text2 {
     padding-left: 10px;
     margin: 0;
 }
-.game_box_s3 {
+.game_box_s4 {
     width: 150px;
     position: absolute;
     margin-left: 34%;
     margin-top: 18%;
 }
-.game_box_button_s3 {
+.game_box_button_s4 {
     margin: 3px;
     width: 100%;
     font-size: 12px;
@@ -186,10 +205,10 @@ p.dialog_box_text2 {
 }
 
 
-.game_box_button_text_s3 {
+.game_box_button_text_s4 {
     color: black;
 }
-.game_box_button_s3:hover {
+.game_box_button_s4:hover {
     transform: scale(1.2,1.5)
 }
 .text_frame1:hover, .text_frame2:hover {
@@ -199,14 +218,14 @@ p.dialog_box_text2 {
 .text_dialog_box {
 
 }
-.text_frame2 {
+.text_frame2_s4 {
     position: absolute;
     width: 129px;
     margin-top: 200px;
     float: left;
     font-size: 12px;
-    margin-left: 72%;
-    padding: 11px 36px;
+    margin-left: 76%;
+    padding: 11px 43px;
     height: 44px;
     background-size: 100% 100%;
     background-image: url(image/bg_text.png);

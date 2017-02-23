@@ -14,6 +14,8 @@
     'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.videoStoryFourRecordVoice.ctrl',
+    'LegendSingapore.videoStoryFiveRecordVoice.ctrl',
+    'LegendSingapore.videoStorySixRecordVoice.ctrl',
     'LegendSingapore.storyTwo.ctrl',
     'LegendSingapore.storyThree.ctrl',
     'LegendSingapore.storyFour.ctrl',
@@ -125,7 +127,11 @@
           url: '/story-five/videoStory5',
           templateUrl: 'templates/story5/video/videoStoryFive.html'
         })
-
+          .state('videoStoryFiveRecordVoice', {
+            url: '/story-five/videoStoryFiveRecordVoice',
+            templateUrl: 'templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoice.html',
+            controller: 'videoStoryFiveRecordVoiceController'
+          })
 
           .state('story-six', {
             url: '/story-six',
@@ -136,7 +142,12 @@
         .state('videoStory6', {
           url: '/story-six/videoStory6',
           templateUrl: 'templates/story6/video/videoStorySix.html'
-        });
+        })
+          .state('videoStorySixRecordVoice', {
+            url: '/story-six/videoStorySixRecordVoice',
+            templateUrl: 'templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoice.html',
+            controller: 'videoStorySixRecordVoiceController'
+          });
 
 
         // if none of the above states are matched, use this as the fallback

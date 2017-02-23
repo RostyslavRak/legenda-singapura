@@ -1,5 +1,5 @@
 angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
-  .controller('videoStoryOneRecordVoiceController',  ['$scope',  function($scope) {
+  .controller('videoStoryOneRecordVoiceController',  ['$scope', ngAudio, function($scope) {
 
   $scope.formParams = {};
   $scope.stage = "";
@@ -58,5 +58,17 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     $scope.formParams = {};
     $scope.stage = "";
   };
+    // function play() {
+    //   var audio = document.getElementById("audio1");
+    //   audio.play();
+    // };
+    $scope.duration = 100;
+    $scope.tracks =
+    {
+      audio: ngAudio.load('audio/SNU-1.mp3')
+    };
+    $scope.track = $scope.tracks.audio;
+    $scope.track.volume = 1;
+    $scope.track.play();
 
-}]);
+  }]);
