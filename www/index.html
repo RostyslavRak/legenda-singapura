@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
     <title>ionic LegendSingapore</title>
+
+
+
     <!-- compiled css output -->
-    <link href="lib/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">
+    <!--<link href="lib/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">-->
     <link href="css/ionic.app.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -31,6 +35,7 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ngDraggable/ngDraggable.js"></script>
     <script src="lib/angular-ui-ace/ui-ace.min.js"></script>
     <script src="lib/ngCordova/ng-cordova.js"></script>
     <script src="lib/angular-audio/app/angular.audio.js"></script>
@@ -41,7 +46,7 @@
 
 
     <!-- cordova script (this will be a 404 during development) -->
-    <!--<script src="cordova.js"></script>-->
+    <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="app.js"></script>
@@ -52,7 +57,10 @@
 
   <body ng-app="LegendSingapore" ng-controller="HomeController">
 
+
   <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()"/>
+
+  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ui-sref="gameStoryOne"/>
 
   <input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()"/>
 
@@ -89,4 +97,3 @@
 
   </body>
 </html>
-www/

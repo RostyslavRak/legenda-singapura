@@ -5,6 +5,7 @@
     'ui.ace',
     'ngAudio',
     'video-background',
+    'ngDraggable',
 
     // modules
     'LegendSingapore.home.ctrl',
@@ -24,19 +25,31 @@
   ])
 
 
-    .run(function ($ionicPlatform) {
-
-      $ionicPlatform.ready(function () {
-
+    .run(function($ionicPlatform) {
+      $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
+
+        // then override any default you want
+        // window.plugins.nativepagetransitions.globalOptions.duration = 500;
+        // window.plugins.nativepagetransitions.globalOptions.iosdelay = 350;
+        // window.plugins.nativepagetransitions.globalOptions.androiddelay = 350;
+        // window.plugins.nativepagetransitions.globalOptions.winphonedelay = 350;
+        // window.plugins.nativepagetransitions.globalOptions.slowdownfactor = 4;
+        // // these are used for slide left/right only currently
+        // window.plugins.nativepagetransitions.globalOptions.fixedPixelsTop = 0;
+        // window.plugins.nativepagetransitions.globalOptions.fixedPixelsBottom = 0;
+
         if (window.cordova && window.cordova.plugins.Keyboard) {
           cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+          cordova.plugins.Keyboard.disableScroll(true);
+
         }
         if (window.StatusBar) {
+          // org.apache.cordova.statusbar required
           StatusBar.styleDefault();
         }
-      })
+      });
     })
 
     .config(function($stateProvider, $urlRouterProvider) {

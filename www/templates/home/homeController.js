@@ -6,11 +6,11 @@
     $scope.duration = 100;
     $scope.tracks =
       {
-        audio: ngAudio.load('audio/Home.mp3')
+        audio: ngAudio.load('audio/Home1.mp3')
       };
     $scope.track = $scope.tracks.audio;
-    $scope.track.volume = 1;
-    $scope.track.play();
+    $scope.track.volume = 0.03;
+     $scope.track.play();
 
 
     $scope.goHome = function () {
