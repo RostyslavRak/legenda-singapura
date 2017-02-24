@@ -1,5 +1,30 @@
 angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
-  .controller('videoStoryOneRecordVoiceController',  ['$scope', ngAudio, function($scope) {
+  .controller('videoStoryOneRecordVoiceController',  ['$scope', 'ngAudio', function($scope, ngAudio) {
+
+
+    $scope.duration = 100;
+    $scope.tracks =
+    {
+      audio1: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-1.mp3'),
+      audio2: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-2.mp3'),
+      audio3: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-3.mp3'),
+      audio4: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-4.mp3'),
+      audio5: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-5.mp3'),
+      audio6: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-6.mp3'),
+      audio7: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-7.mp3'),
+      audio8: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-8.mp3'),
+      audio9: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-9.mp3'),
+      audio10: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-10.mp3'),
+      audio11: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-11.mp3'),
+      audio12: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-12.mp3'),
+      audio13: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU-13.mp3'),
+      audioIntro1: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNUtama_Intro_1.mp3'),
+      audioIntro2: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNUMamanda_Intro2.mp3')
+    };
+
+    $scope.track.volume = 1;
+    // $scope.track.play();
+
 
   $scope.formParams = {};
   $scope.stage = "";
@@ -62,13 +87,6 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     //   var audio = document.getElementById("audio1");
     //   audio.play();
     // };
-    $scope.duration = 100;
-    $scope.tracks =
-    {
-      audio: ngAudio.load('audio/SNU-1.mp3')
-    };
-    $scope.track = $scope.tracks.audio;
-    $scope.track.volume = 1;
-    $scope.track.play();
+
 
   }]);

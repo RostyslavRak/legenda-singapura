@@ -6,21 +6,21 @@
         <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
           <!--Story 1 - page 0-->
           <div class="animate-switch position story0_s2" ng-switch-default>
+
             <div class="buttons0">
-              <button type="button" class="btn buttons1 " ng-click="next('stage1')">Start</button>
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage1')">
             </div>
           </div>
           <!--Story 1 - page 1-->
           <div class="animate-switch position story1_1_s2"  ng-switch-when="stage1">
-            <div class="text_frame1">
+            <div class="text_frame1_sc2" ng-click="tracks.audioIntro1_s2.play()">
               <p>Mawar</p>
             </div>
-            <div class="text_frame2">
+            <div class="text_frame2_sc2" ng-click="tracks.audioIntro2_s2.play()">
               <p>Melur</p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn  buttons1" ng-click="back('')">Back</button>
-              <button type="button" class="btn  buttons2" ng-click="next('stage2')">Next</button>
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage2')">
             </div>
           </div>
 
@@ -34,8 +34,8 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage1')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage3')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage1')">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage3')">
             </div>
           </div>
           <!--Story 1 - page 3-->
@@ -49,9 +49,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage2')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage3a')">Next</button>
-            </div>
+            <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage2')">
+            <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                   ng-click="tracks.audio1_s2.paused ? tracks.audio1_s2.play() : tracks.audio1_s2.pause(); src = tracks.audio1_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+            <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage3a')">
+          </div>
           </div>
           <!--Story 1 - page 4-->
 
@@ -64,8 +66,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage3')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage4')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage3')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio2_s2.paused ? tracks.audio2_s2.play() : tracks.audio2_s2.pause(); src = tracks.audio2_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage4')">
             </div>
           </div>
 
@@ -79,9 +83,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage3a')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage5')">Next</button>
-            </div>
+            <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage3a')">
+            <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                   ng-click="tracks.audio3_s2.paused ? tracks.audio3_s2.play() : tracks.audio3_s2.pause(); src = tracks.audio3_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+            <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage5')">
+          </div>
           </div>
 
           <!--Story 1 - page 6-->
@@ -93,9 +99,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage4')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage6')">Next</button>
-            </div>
+            <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage4')">
+            <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                   ng-click="tracks.audio4_s2.paused ? tracks.audio4_s2.play() : tracks.audio4_s2.pause(); src = tracks.audio4_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+            <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage6')">
+          </div>
           </div>
 
           <!--Story 1 - page 7-->
@@ -107,9 +115,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage5')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage7')">Next</button>
-            </div>
+            <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage5')">
+            <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                   ng-click="tracks.audio5_s2.paused ? tracks.audio5_s2.play() : tracks.audio5_s2.pause(); src = tracks.audio5_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+            <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage7')">
+          </div>
           </div>
 
           <!--Story 1 - page 8-->
@@ -122,9 +132,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage6')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage8')">Next</button>
-            </div>
+            <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage6')">
+            <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                   ng-click="tracks.audio6_s2.paused ? tracks.audio6_s2.play() : tracks.audio6_s2.pause(); src = tracks.audio6_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+            <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage8')">
+          </div>
           </div>
 
           <!--Story 1 - page 9-->
@@ -136,8 +148,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage7')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage9')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage7')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio7_s2.paused ? tracks.audio7_s2.play() : tracks.audio7_s2.pause(); src = tracks.audio7_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage9')">
             </div>
           </div>
 
@@ -152,8 +166,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage8')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage10')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage8')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio8_s2.paused ? tracks.audio8_s2.play() : tracks.audio8_s2.pause(); src = tracks.audio8_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage10')">
             </div>
           </div>
 
@@ -168,8 +184,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage9')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage11')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage9')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio9_s2.paused ? tracks.audio9_s2.play() : tracks.audio9_s2.pause(); src = tracks.audio9_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage11')">
             </div>
           </div>
 
@@ -184,8 +202,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage10')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage12')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage10')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio10_s2.paused ? tracks.audio10_s2.play() : tracks.audio10_s2.pause(); src = tracks.audio10_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage12')">
             </div>
           </div>
 
@@ -200,8 +220,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage11')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage13')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage11')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio11_s2.paused ? tracks.audio11_s2.play() : tracks.audio11_s2.pause(); src = tracks.audio11_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage13')">
             </div>
           </div>
           <!--Story 1 - page 14-->
@@ -213,8 +235,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage12')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage14')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage12')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio12_s2.paused ? tracks.audio12_s2.play() : tracks.audio12_s2.pause(); src = tracks.audio12_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage14')">
             </div>
           </div>
           <!--Story 1 - page 15-->
@@ -226,8 +250,10 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage13')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage15')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage13')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio13_s2.paused ? tracks.audio13_s2.play() : tracks.audio13_s2.pause(); src = tracks.audio13_s2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage15')">
             </div>
           </div>
 
@@ -241,8 +267,11 @@
               </p>
             </div>
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage14')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage16')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage14')">
+              <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="tracks.audio14_s2.paused ? tracks.audio14_s2.play() : tracks.audio14_s2.pause(); src = tracks.audio14_s2.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage16')">
             </div>
           </div>
 
@@ -266,13 +295,49 @@
 
 
             <div class="buttons0">
-              <button type="button" class="btn buttons1" ng-click="back('stage15')">Back</button>
-              <button type="button" class="btn buttons2" ng-click="next('stage17')">Next</button>
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage15')">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage17')">
             </div>
           </div>
+          <!--Story 1 - page 17-->
+
+          <div class="animate-switch position story16_1_s2" ng-switch-when="stage17">
+
+            <div class="bg_poems">
+              <p style="text-align: center">Pantun</p>
+              <input class="bg_poems_button" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent = true; src = poems[0].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[0].showContent" class="bg_poems_text1">
+                {{poems[0].poem_cont}}
+              </p>
+
+              <input class="bg_poems_button" ng-if="poems[0].showContent" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[1].poem1_au.paused ? poems[1].poem1_au.play() : poems[1].poem1_au.pause(); poems[1].showContent = true; src = poems[1].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[1].showContent" class="bg_poems_text1">
+                {{poems[1].poem_cont}}
+              </p>
+
+              <input class="bg_poems_button" ng-if="poems[1].showContent" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[2].poem1_au.paused ? poems[2].poem1_au.play() : poems[2].poem1_au.pause();  poems[2].showContent = true; src = poems[2].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[2].showContent" class="bg_poems_text1">
+                {{poems[2].poem_cont}}
+              </p>
+
+            </div>
+
+            <div class="buttons0">
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage16')">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage1')">
+            </div>
+
+          </div>
+
 
         </div>
-      </form>
+    </form>
     </div>
   </div>
 </ion-view>
