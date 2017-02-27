@@ -194,3 +194,47 @@ p.dialog_box_text2 {
     width: 50px;
     float: left;
 }
+/*.dialog_box {*/
+    /*width: 100%;*/
+    /*font-size: 12px;*/
+    /*padding: 5px 17px;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*height: 80px;*/
+    /*float: left;*/
+    /*background-size: 100% 100%;*/
+    /*background-image: url(image/bg_dialog.png);*/
+/*}*/
+.comprehension_box_s1 {
+    width: 80%;
+    font-size: 12px;
+    padding: 35px 90px;
+    position: absolute;
+    bottom: 70px;
+    height: 240px;
+    text-align: left;
+    margin-left: 10%;
+    background-size: 100% 100%;
+    background-image: url(image/bg_dialog.png);
+}
+.comprehension_text1_s1 {
+    color: #262626;
+    padding-top: 3px;
+    text-align: left;
+    font-weight: bold;
+    float: left;
+}
+.comprehension_button_s1 {
+    width: 50px;
+    float: left;
+}
+input.comprehension_box_voice_s1 {
+    width: 50px;
+    margin-left: -14%;
+    float: left;
+}
+.comprehension_box_title_s1 {
+    padding-top: 14px;
+    font-size: medium;
+    font-weight: bold;
+}
