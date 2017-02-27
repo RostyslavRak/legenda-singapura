@@ -45,7 +45,7 @@ angular.module('LegendSingapore.videoStoryFourRecordVoice.ctrl', [])
       showContent: false,
       poem_cont: 'Keris campuran tujuh besi,\n  Buat hadiah putera raja; \n    Badang memakan muntah gergasi, \n  Menjadi kuat gagah perkasa.'
     },{
-      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/SDT-2.mp3'),
+      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/SDT-3.mp3'),
       showContent: false,
       poem_cont: ' Sungguh tinggi terbang Si Helang, \n  Tingginya sampai jauh ke awan; \n   Gagahnya Badang sudah terbilang, \n  Digeruni musuh ditakuti lawan.'
     }];

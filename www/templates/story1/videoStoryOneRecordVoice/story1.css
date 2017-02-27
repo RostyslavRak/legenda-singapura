@@ -169,26 +169,28 @@ p.dialog_box_text2 {
     background-image: url(image/bg_text.png);
 
 }
-.bg_poems {
+
+/*---------Games options--------*/
+.bg_poems_s1 {
     width: 71%;
     font-size: 12px;
-    padding: 34px 17px;
+    padding: 54px 17px;
     position: absolute;
     bottom: 29px;
-    height: 250px;
+    height: 300px;
     margin-left: 15%;
     float: left;
     background-size: 100% 100%;
     background-image: url(image/bg_dialog.png);
 }
 
-.bg_poems_text1 {
+.bg_poems_text1_s1 {
     color: #262626;
     padding-top: 3px;
     text-align: left;
     font-weight: bold;
 }
-.bg_poems_button {
+.bg_poems_button_s1 {
     width: 50px;
     float: left;
 }

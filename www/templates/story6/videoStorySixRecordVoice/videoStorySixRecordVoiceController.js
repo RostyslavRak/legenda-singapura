@@ -35,46 +35,25 @@ angular.module('LegendSingapore.videoStorySixRecordVoice.ctrl', [])
     // $scope.track.play();
     // END ------ Playlist of voices for characters
 
-
     //Start ------ Poems_story6___
 
     $scope.track.volume = 1;
     // $scope.track.play();
     $scope.duration = 100;
     $scope.poems =[{
-      poem1_au:  ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-1.mp3'),
+      poem1_au:  ngAudio.load('templates/story6/videoStorySixRecordVoice/pantun/Pantun-SD-1.mp3'),
       showContent1: false,
       poem_cont: ' Tak dapat telinga tanduk dipulas, \n   Jangan lah ia jadi ikutan;\n   Halilintar menyerang tiada belas,\n Perahu musnah karam di lautan. '
     },{
-      poem1_au: ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-2.mp3'),
+      poem1_au: ngAudio.load('templates/story6/videoStorySixRecordVoice/pantun/Pantun-SD-2.mp3'),
       showContent1: false,
       poem_cont: 'Hendak memetik buah berangan, \n  Jangan dilupa sebatang galah; \n      Singa Duyung gagah menangkis serangan, \n   Halilintar lari mengaku kalah.'
     },{
-      poem1_au: ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-3.mp3'),
+      poem1_au: ngAudio.load('templates/story6/videoStorySixRecordVoice/pantun/Pantun-SD-3.mp3'),
       showContent1: false,
       poem_cont: 'Kerja yang berat menjadi ringan, \n  Bergotong-royong penuh selesa;  \n    Penduduk selamat dari serangan, \n  Pulau menjadi aman sentosa.'
     }];
     // END ------ Poems_story6___
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         $scope.formParams = {};
   $scope.stage = "";

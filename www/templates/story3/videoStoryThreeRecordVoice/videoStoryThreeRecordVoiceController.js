@@ -33,26 +33,25 @@ angular.module('LegendSingapore.videoStoryThreeRecordVoice.ctrl', [])
     // $scope.track.play();
     // END ------ Playlist of voices for characters
 
-
-    //Start ------ Poems_story4___
+    //Start ------ Poems_story3___
 
     $scope.track.volume = 1;
     // $scope.track.play();
     $scope.duration = 100;
     $scope.poems =[{
-      poem1_au:  ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-1.mp3'),
+      poem1_au:  ngAudio.load('www/templates/story3/videoStoryThreeRecordVoice/pantun/Pantun-RM-1.mp3'),
       showContent1: false,
       poem_cont: 'Pisang emas di atas dulang, \n  Mari dimakan tepi istana; \n Radin Mas bersedih bukan kepalang, \n Ayahnya hilang entah ke mana.'
     },{
-      poem1_au: ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-2.mp3'),
+      poem1_au: ngAudio.load('www/templates/story3/videoStoryThreeRecordVoice/pantun/Pantun-RM-2.mp3'),
       showContent1: false,
       poem_cont: 'Luka dijari terasa pedih, \n  Bila terkait dicuck duri; \n        Radin Mas merintih menanggung sedih, \n Dipaksa berkahwin  Si ibu tiri.'
     },{
-      poem1_au: ngAudio.load('templates/story3/videoStoryThreeRecordVoice/audio_s3/RM-3.mp3'),
+      poem1_au: ngAudio.load('www/templates/story3/videoStoryThreeRecordVoice/pantun/Pantun-RM-3.mp3'),
       showContent1: false,
       poem_cont: 'Bahtera berlayar dari muara, \n          Hendak berlayar ke Tanah Jawa;  \n   Ayah bersedih duka nan lara, \n  Radin Mas berkorban tergadai nyawa.'
     }];
-    // END ------ Poems_story4___
+    // END ------ Poems_story3___
 
         $scope.formParams = {};
   $scope.stage = "";

@@ -31,63 +31,25 @@ angular.module('LegendSingapore.videoStoryFiveRecordVoice.ctrl', [])
     // $scope.track.play();
     // END ------ Playlist of voices for characters
 
-
     // START ------ Poems_story4___
     $scope.duration = 100;
     $scope.poems =[{
 
 
-      poem1_au:  ngAudio.load(' templates/story5/videoStoryFiveRecordVoice/audio_s5/B-1.mp3'),
+      poem1_au:  ngAudio.load('templates/story5/videoStoryFiveRecordVoice/pantun/Pantun-B-1.mp3'),
       showContent: false,
       poem_cont: ' Pagi hari memasang lukah,\n Lukah dipasang  di tepi titi; \n   Rakyat terkejut pantai berdarah, \n    Diserang todak tiada berhenti.'
     },{
-      poem1_au: ngAudio.load('templates/story5/videoStoryFiveRecordVoice/audio_s5/B-1.mp3'),
+      poem1_au: ngAudio.load('templates/story5/videoStoryFiveRecordVoice/pantun/Pantun-B-2.mp3'),
       showContent: false,
       poem_cont: 'Anak Merbah di atas dahan,\n  Melihat angsa di dalam reban; \n  Todak menyerang tanpa kasihan, \n Rakyat jelata menjadi korban.'
     },{
-      poem1_au: ngAudio.load('templates/story5/videoStoryFiveRecordVoice/audio_s5/B-1.mp3'),
+      poem1_au: ngAudio.load('templates/story5/videoStoryFiveRecordVoice/pantun/Pantun-B-3.mp3'),
       showContent: false,
       poem_cont: 'Sejuk-sejuk air telaga, \n  Boleh diminum dibuat ubat; \n Nadim yang bijak akal geliga, \n   Todak dihalang negara diselamat.'
     }];
 
     // END ------ Poems_story4___
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     $scope.formParams = {};
   $scope.stage = "";

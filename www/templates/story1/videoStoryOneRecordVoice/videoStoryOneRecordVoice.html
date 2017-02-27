@@ -257,26 +257,29 @@
           </div>
 
           <div class="animate-switch position story15_1" ng-switch-when="stage15">
-            <div class="bg_poems">
+
+
+
+            <div class="bg_poems_s1">
               <p style="text-align: center">Pantun</p>
-              <input class="bg_poems_button" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+              <input class="bg_poems_button_s1" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
                      ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent = true; src = poems[0].poem1_au.paused ?
                      'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-              <p ng-if="poems[0].showContent" class="bg_poems_text1">
+              <p ng-if="poems[0].showContent" class="bg_poems_text1_s1">
                 {{poems[0].poem_cont}}
               </p>
 
-              <input class="bg_poems_button" ng-if="poems[0].showContent1" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+              <input class="bg_poems_button_s1" ng-if="poems[0].showContent" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
                      ng-click="poems[1].poem1_au.paused ? poems[1].poem1_au.play() : poems[1].poem1_au.pause(); poems[1].showContent = true; src = poems[1].poem1_au.paused ?
                      'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-              <p ng-if="poems[1].showContent" class="bg_poems_text1">
+              <p ng-if="poems[1].showContent" class="bg_poems_text1_s1">
                 {{poems[1].poem_cont}}
               </p>
 
-              <input class="bg_poems_button" ng-if="poems[1].showContent1" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+              <input class="bg_poems_button_s1" ng-if="poems[1].showContent" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
                      ng-click="poems[2].poem1_au.paused ? poems[2].poem1_au.play() : poems[2].poem1_au.pause();  poems[2].showContent = true; src = poems[2].poem1_au.paused ?
                      'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-              <p ng-if="poems[2].showContent" class="bg_poems_text1">
+              <p ng-if="poems[2].showContent" class="bg_poems_text1_s1">
                 {{poems[2].poem_cont}}
               </p>
 

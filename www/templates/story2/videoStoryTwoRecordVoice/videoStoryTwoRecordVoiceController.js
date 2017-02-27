@@ -26,18 +26,17 @@ angular.module('LegendSingapore.videoStoryTwoRecordVoice.ctrl', [])
     $scope.track.volume = 1;
     // $scope.track.play();
     // END ------ Playlist of voices for characters
-
     $scope.duration = 100;
     $scope.poems =[{
-      poem1_au:  ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-1.mp3'),
+      poem1_au:  ngAudio.load('templates/story2/videoStoryTwoRecordVoice/pantun/Pantun-PB-1.mp3'),
       showContent: false,
       poem_cont: 'Pergi memanah di Tanjung Ara,\n Busar dibalut si kain baldu; \n Mawar dan Melur dua bersaudara, \n Ke mana sahaja bersama selalu.'
     },{
-      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-2.mp3'),
+      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/pantun/Pantun-PB-2.mp3'),
       showContent: false,
       poem_cont: 'Sakit terasa tidak terperi, \n   Jari terketuk tukul dan pahat; \n    Melur ditangkap dibawa lari, \n    Mawar berazam adik  diselamat.'
     },{
-      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-3.mp3'),
+      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/pantun/Pantun-PB-3.mp3'),
       showContent: false,
       poem_cont: 'Berenang-renang ikan tenggiri, \n  Mengikut arus arah utara \n  Kasih saudara kekal abadi, \n  Menjadi pulau dua bersaudara.'
     }];

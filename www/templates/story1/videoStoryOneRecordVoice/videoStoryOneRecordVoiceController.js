@@ -1,7 +1,7 @@
 angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
   .controller('videoStoryOneRecordVoiceController',  ['$scope', 'ngAudio', function($scope, ngAudio) {
 
-
+    // START ------ Playlist of voices for characters
     $scope.duration = 100;
     $scope.tracks =
     {
@@ -21,24 +21,26 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
       audioIntro1: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNUtama_Intro_1.mp3'),
       audioIntro2: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNUMamanda_Intro2.mp3')
     };
+    // END ------ Playlist of voices for characters
 
+    //Start ------ Poems_story1___
     $scope.track.volume = 1;
     // $scope.track.play();
     $scope.duration = 100;
     $scope.poems =[{
-      poem1_au:  ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-1.mp3'),
+      poem1_au:  ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun-SNU-1.mp3'),
       showContent1: false,
       poem_cont: 'Pulaunya indah berpasir putih,\n Namanya Temasek haluan dituju; \n Sang Nila Utama semakin gigih, \n Hendak membuka negara baharu.'
     },{
-      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-2.mp3'),
+      poem1_au: ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun-SNU-2.mp3'),
       showContent1: false,
-      poem_cont: 'Hendak bermalam di Kota Kluang, \n        Berjalan jauh bukan kepalang; \n    Semua barangan telah dibuang, \n        Namun badai menjadi penghalang.'
+      poem_cont: 'Hendak bermalam di Kota Kluang, \n   Berjalan jauh bukan kepalang; \n    Semua barangan telah dibuang, \n        Namun badai menjadi penghalang.'
     },{
-      poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-3.mp3'),
+      poem1_au: ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun-SNU-3.mp3'),
       showContent1: false,
       poem_cont: 'Pergi berburu di tengah hutan, \n  Membawa bersama barang keperluan; \n  Mahkota dibuang di tengah lautan, \n  Bahtera selamat  ke tempat tujuan.'
     }];
-
+//END ------ Poems_story1___
 
   $scope.formParams = {};
   $scope.stage = "";
@@ -97,10 +99,5 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     $scope.formParams = {};
     $scope.stage = "";
   };
-    // function play() {
-    //   var audio = document.getElementById("audio1");
-    //   audio.play();
-    // };
-
 
   }]);
