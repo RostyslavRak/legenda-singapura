@@ -252,9 +252,45 @@
               <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage13')">
               <input style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
                      ng-click="tracks.audio13.paused ? tracks.audio13.play() : tracks.audio13.pause(); src = tracks.audio13.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage15')">
+            </div>
+          </div>
+
+          <div class="animate-switch position story15_1" ng-switch-when="stage15">
+            <div class="bg_poems">
+              <p style="text-align: center">Pantun</p>
+              <input class="bg_poems_button" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent = true; src = poems[0].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[0].showContent" class="bg_poems_text1">
+                {{poems[0].poem_cont}}
+              </p>
+
+              <input class="bg_poems_button" ng-if="poems[0].showContent1" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[1].poem1_au.paused ? poems[1].poem1_au.play() : poems[1].poem1_au.pause(); poems[1].showContent = true; src = poems[1].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[1].showContent" class="bg_poems_text1">
+                {{poems[1].poem_cont}}
+              </p>
+
+              <input class="bg_poems_button" ng-if="poems[1].showContent1" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                     ng-click="poems[2].poem1_au.paused ? poems[2].poem1_au.play() : poems[2].poem1_au.pause();  poems[2].showContent = true; src = poems[2].poem1_au.paused ?
+                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+              <p ng-if="poems[2].showContent" class="bg_poems_text1">
+                {{poems[2].poem_cont}}
+              </p>
+
+            </div>
+            <div class="buttons0">
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('stage14')">
               <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage1')">
             </div>
           </div>
+
+
+
+
+
 
         </div>
       </form>

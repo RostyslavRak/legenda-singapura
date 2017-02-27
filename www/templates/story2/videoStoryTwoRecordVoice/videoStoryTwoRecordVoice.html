@@ -20,6 +20,7 @@
               <p>Melur</p>
             </div>
             <div class="buttons0">
+              <input style="width: 50px" type="image" src = 'templates/home/img/btn/previous button.png' class="buttons1" ng-click="back('')">
               <input style="width: 50px" type="image" class="buttons2" src = 'templates/home/img/btn/next button.png'  ng-click="next('stage2')">
             </div>
           </div>
@@ -303,7 +304,7 @@
 
           <div class="animate-switch position story16_1_s2" ng-switch-when="stage17">
 
-            <div class="bg_poems">
+            <div class="bg_poems_2">
               <p style="text-align: center">Pantun</p>
               <input class="bg_poems_button" style="width: 50px; margin-left: 5%" type="image" ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
                      ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent = true; src = poems[0].poem1_au.paused ?
