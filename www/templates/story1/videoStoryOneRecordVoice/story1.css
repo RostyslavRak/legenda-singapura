@@ -168,21 +168,27 @@ p.dialog_box_text2 {
     background-size: 100% 100%;
     background-image: url(image/bg_text.png);
 
-
-    /*width: 129px;*/
-    /*margin-top: 200px;*/
-    /*float: left;*/
-    /*font-size: 12px;*/
-    /*margin-left: 300px;*/
-    /*padding: 11px 36px;*/
-    /*height: 44px;*/
-    /*background-size: 100% 100%;*/
-    /*background-image: url(image/bg_text.png);*/
 }
-/*.bagHomePage_R{*/
-/*background: url(image/s1_SN07_R03.jpg) no-repeat center center fixed;*/
-/*-webkit-background-size: cover;*/
-/*-moz-background-size: cover;*/
-/*-o-background-size: cover;*/
-/*background-size: cover;*/
-/*}*/
+.bg_poems {
+    width: 71%;
+    font-size: 12px;
+    padding: 34px 17px;
+    position: absolute;
+    bottom: 29px;
+    height: 250px;
+    margin-left: 15%;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url(image/bg_dialog.png);
+}
+
+.bg_poems_text1 {
+    color: #262626;
+    padding-top: 3px;
+    text-align: left;
+    font-weight: bold;
+}
+.bg_poems_button {
+    width: 50px;
+    float: left;
+}

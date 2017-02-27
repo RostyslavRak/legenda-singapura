@@ -201,13 +201,13 @@ p.dialog_box_text2 {
 }
 /*GAme options-----*/
 
-.bg_poems {
+.bg_poems_2 {
     width: 71%;
     font-size: 12px;
-    padding: 34px 17px;
+    padding: 54px 17px;
     position: absolute;
     bottom: 29px;
-    height: 250px;
+    height: 300px;
     margin-left: 15%;
     float: left;
     background-size: 100% 100%;

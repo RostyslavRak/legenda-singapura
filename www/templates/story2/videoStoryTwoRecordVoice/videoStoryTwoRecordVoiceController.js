@@ -31,16 +31,18 @@ angular.module('LegendSingapore.videoStoryTwoRecordVoice.ctrl', [])
     $scope.poems =[{
       poem1_au:  ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-1.mp3'),
       showContent: false,
-      poem_cont: 'Pulaunya indah berpasir putih,\n Namanya Temasek haluan dituju; \n Sang Nila Utama semakin gigih, \n Hendak membuka negara baharu.'
+      poem_cont: 'Pergi memanah di Tanjung Ara,\n Busar dibalut si kain baldu; \n Mawar dan Melur dua bersaudara, \n Ke mana sahaja bersama selalu.'
     },{
       poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-2.mp3'),
       showContent: false,
-      poem_cont: 'Hendak bermalam di Kota Kluang, \n        Berjalan jauh bukan kepalang; \n    Semua barangan telah dibuang, \n        Namun badai menjadi penghalang.'
+      poem_cont: 'Sakit terasa tidak terperi, \n   Jari terketuk tukul dan pahat; \n    Melur ditangkap dibawa lari, \n    Mawar berazam adik  diselamat.'
     },{
       poem1_au: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/audio_s2/PB-3.mp3'),
       showContent: false,
-      poem_cont: 'Pergi berburu di tengah hutan, \n  Membawa bersama barang keperluan; \n  Mahkota dibuang di tengah lautan, \n  Bahtera selamat  ke tempat tujuan.'
+      poem_cont: 'Berenang-renang ikan tenggiri, \n  Mengikut arus arah utara \n  Kasih saudara kekal abadi, \n  Menjadi pulau dua bersaudara.'
     }];
+
+
 
   $scope.formParams = {};
   $scope.stage = "";
