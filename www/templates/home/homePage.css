@@ -4,6 +4,30 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 10;
+}
+.show_title{
+  width: 96%;
+  height: 104%;
+  background: url(img/Title_page_full.png);
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 20;
+  display: block;
+}
+.show_title1{
+  width: 96%;
+  height: 104%;
+  background: url(img/Title_page_second_small.png);
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
 }
 
 .story6{
@@ -44,7 +68,7 @@
 .story1{
   cursor: pointer;
   width: 25%;
-  margin-left: 11%;
+  margin-left: 9%;
   margin-top: -8%;
 }
 
@@ -60,6 +84,12 @@
   width: 25%;
   margin-left: -67%;
   margin-top: -6%;
+}
+.title_main{
+  width: 34%;
+  margin-left: -37%;
+  margin-top: 1%;
+  position: absolute;
 }
 
 
@@ -77,10 +107,10 @@
 
 
 .myButtonMap {
-  position: relative;
+  position: absolute;
   z-index: 10;
   cursor:pointer;
-  height: 70px;
+  height: 60px;
   border: none;
 }
 
@@ -98,6 +128,6 @@
   position: relative;
   z-index: 10;
   cursor:pointer;
-  height: 70px;
+  height: 60px;
   border: none;
 }

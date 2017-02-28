@@ -2,6 +2,9 @@
     <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
     <div class="container">
         <div class="box_story_1">
+            <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">
+            <input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
+
             <ng-form name="multiStepForm" class="form-validation" role="form" novalidate>
                 <div class="animate-switch-container" ng-switch on="stage"
                      ng-class="{forward: direction, backward:!direction}">
@@ -361,20 +364,21 @@
                             <form>
                                 <input class="comprehension_box_voice_s2" type="image"
                                        ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                       ng-click="pantun[countQuestion].audio.paused ? pantun[countQuestion].audio.play() : pantun[countQuestion].audio.pause(); src = pantun[countQuestion].audio.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-                                <p class="comprehension_box_title_s2">{{pantun[countQuestion].question}}</p>
+                                       ng-click="pantun1[countQuestion].audio.paused ? pantun1[countQuestion].audio.play() : pantun1[countQuestion].audio.pause();
+                                       src = pantun1[countQuestion].audio.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                <p class="comprehension_box_title_s2">{{pantun1[countQuestion].question}}</p>
                                 <br>
-                                <label ng-repeat="answer in pantun[countQuestion].answers"
+                                <label ng-repeat="answer in pantun1[countQuestion].answers"
                                        ng-click="answer.done = true;">
                                     <p ng-if="!answer.done">{{answer.title}}. {{answer.answer}}</p>
                                     <p ng-if="answer.done && !answer.success" style="color: red">{{answer.title}}.
                                         {{answer.answer}}</p>
-                                    <p ng-if="answer.done && answer.success" ng-init="pantun[countQuestion].done = true"
+                                    <p ng-if="answer.done && answer.success" ng-init="pantun1[countQuestion].done = true"
                                        style="color: green">{{answer.title}}. {{answer.answer}}</p>
                                 </label>
                                 <input style="width: 50px; margin-top: -15px; margin-left: 20px" type="image"
                                        class="buttons2" src='templates/home/img/btn/next button.png'
-                                       ng-show="pantun[countQuestion].done"
+                                       ng-show="pantun1[countQuestion].done"
                                        ng-click="countQuestion = countQuestion + 1"> </input>
                             </form>
 

@@ -13,14 +13,7 @@
     bottom: 5px;
 }
 
-/*.buttons1 {*/
-    /*background: transparent;*/
-    /*border: none;*/
-    /*float: left;*/
-    /*width: 12%;*/
-    /*position: absolute;*/
-    /*bottom: 5px;*/
-/*}*/
+
 .buttons1:hover, .buttons2:hover {
     color: #ffffff;
     cursor: pointer;
@@ -192,7 +185,7 @@ p.dialog_box_text2 {
 .game_box_button:hover {
     transform: scale(1.2,1.5)
 }
-.text_frame1:hover, .text_frame2:hover {
+.text_frame1_sc2:hover, .text_frame2_sc2:hover {
     color: #FFFFFF;
     cursor: pointer;
 }

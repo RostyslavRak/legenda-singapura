@@ -3,6 +3,8 @@ angular.module('LegendSingapore.videoStoryFourRecordVoice.ctrl', [])
 
     // START ------ Playlist of voices for characters
     $scope.duration = 100;
+    $scope.countQuestion = 0;
+
     $scope.tracks =
     {
       audio1_s4: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/B-1.mp3'),
@@ -36,22 +38,119 @@ angular.module('LegendSingapore.videoStoryFourRecordVoice.ctrl', [])
     $scope.duration = 100;
     $scope.poems =[{
 
-
-      poem1_au:  ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/SDT-1.mp3'),
+      poem1_au:  ngAudio.load('templates/story4/videoStoryFourRecordVoice/pantun/Pantun-SDT-1.mp3'),
       showContent: false,
       poem_cont: 'Anak busut di tengah bendang,\n  Semut api belajar memanjat; \n Gergasi takut dibunuh Badang, \n Berjanji penuhi segala hajat.'
     },{
-      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/SDT-2.mp3'),
+      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/pantun/Pantun-SDT-2.mp3'),
       showContent: false,
       poem_cont: 'Keris campuran tujuh besi,\n  Buat hadiah putera raja; \n    Badang memakan muntah gergasi, \n  Menjadi kuat gagah perkasa.'
     },{
-      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/audio_s4/SDT-3.mp3'),
+      poem1_au: ngAudio.load(' templates/story4/videoStoryFourRecordVoice/pantun/Pantun-SDT-3.mp3'),
       showContent: false,
       poem_cont: ' Sungguh tinggi terbang Si Helang, \n  Tingginya sampai jauh ke awan; \n   Gagahnya Badang sudah terbilang, \n  Digeruni musuh ditakuti lawan.'
     }];
 
     // END ------ Poems_story4___
 
+    <!--START         Comprehension       questions -->
+    $scope.pantun1 = [{
+      done: false,
+      audio: ngAudio.load('templates/story4/videoStoryFourRecordVoice/comprehension/Comprehension-B-Q1.mp3'),
+      question: "Apakah yang dilakukan oleh Badang setiap hari?",
+      answers: [
+        {
+          done: false,
+          title: "A",
+          answer: "Memasang lukah. ",
+          success: true
+        },
+        {
+          done: false,
+          title: "B",
+          answer: "Mengangkat batu.",
+          success: false
+        },
+        {
+          done: false,
+          title: "C",
+          answer: "Membuat perangkap.",
+          success: false
+        }]
+    },
+      {
+        done: false,
+        audio: ngAudio.load('templates/story4/videoStoryFourRecordVoice/comprehension/Comprehension-B-Q2.mp3'),
+        question: "Mengapakah Badang menjadi marah?",
+        answers: [
+          {
+            done: false,
+            title: "A",
+            answer: "Ikan yang ditangkap telah mati.",
+            success: false
+          },
+          {
+            done: false,
+            title: "B",
+            answer: "Ikan di dalam lukahnya terlepas ke sungai",
+            success: false
+          },
+          {
+            done: false,
+            title: "C",
+            answer: "Ikan yang ditangkap telah dimakan seseorang.",
+            success:  true
+          }]
+      },
+      {
+        done: false,
+        audio: ngAudio.load('templates/story4/videoStoryFourRecordVoice/comprehension/Comprehension-B-Q3.mp3'),
+        question: ". Bagaimanakah gergasi itu melepaskan diri?",
+        answers: [
+          {
+            done: false,
+            title: "A",
+            answer: "Gergasi  itu berjanji tidak akan mengganggu Badang.",
+            success: false
+          },
+          {
+            done: false,
+            title: "B",
+            answer: "Gergasi itu berjanji akan membuat Badang menjadi kuat.",
+            success:  true
+          },
+          {
+            done: false,
+            title: "C",
+            answer: "Gergasi itu berjanji tidak akan memakan ikan-ikan tangkapan Badang.",
+            success: false
+          }]
+      },
+      {
+        done: false,
+        audio: ngAudio.load('templates/story4/videoStoryFourRecordVoice/comprehension/Comprehension-B-Q4.mp3'),
+        question: "Badang dilantik menjadi apa?",
+        answers: [
+          {
+            done: false,
+            title: "A",
+            answer: "Nelayan",
+            success: false
+          },
+          {
+            done: false,
+            title: "B",
+            answer: "Pahlawan",
+            success: false
+          },
+          {
+            done: false,
+            title: "C",
+            answer: "Hulubalang",
+            success:  true
+          }]
+      }];
+    <!--END         Comprehension       questions -->
 
 
   $scope.formParams = {};

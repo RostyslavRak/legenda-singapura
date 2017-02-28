@@ -133,11 +133,11 @@
 }
 .story20_1_s4 {
 
-    background-image: url(image/Scena_5_end.jpg);
+    background-image: url(image/s5_SN5_R03.jpg);
 }
 .story21_1_s4 {
 
-    background-image: url(image/Scena_5_end.jpg);
+    background-image: url(image/s5_SN5_R03.jpg);
 }
 
 
@@ -148,23 +148,13 @@
     margin-top: 200px;
     margin-left: 20px;
     font-size: 12px;
-    padding: 11px 45px;
+    padding: 11px 41px;
     height: 44px;
     float: left;
     background-size: 100% 100%;
     background-image: url(image/bg_text.png);
 }
-/*.dialog_box {*/
-    /*width: 100%;*/
-    /*font-size: 12px;*/
-    /*padding: 5px 17px;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*height: 80px;*/
-    /*float: left;*/
-    /*background-size: 100% 100%;*/
-    /*background-image: url(image/bg_dialog.png);*/
-/*}*/
+
 .dialog_box_sc_3 {
     width: 123px;
     margin-top: 200px;
@@ -211,7 +201,7 @@ p.dialog_box_text2 {
 .game_box_button_s4:hover {
     transform: scale(1.2,1.5)
 }
-.text_frame1:hover, .text_frame2:hover {
+.text_frame1_s4:hover, .text_frame2_s4:hover {
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -256,7 +246,39 @@ p.dialog_box_text2 {
     width: 50px;
     float: left;
 }
-
+.comprehension_box_s4 {
+    width: 80%;
+    font-size: 12px;
+    padding: 35px 90px;
+    position: absolute;
+    bottom: 70px;
+    height: 240px;
+    text-align: left;
+    margin-left: 10%;
+    background-size: 100% 100%;
+    background-image: url(image/bg_dialog.png);
+}
+.comprehension_text1_s4 {
+    color: #262626;
+    padding-top: 3px;
+    text-align: left;
+    font-weight: bold;
+    float: left;
+}
+.comprehension_button_s4 {
+    width: 50px;
+    float: left;
+}
+input.comprehension_box_voice_s4 {
+    width: 50px;
+    margin-left: -14%;
+    float: left;
+}
+.comprehension_box_title_s2 {
+    padding-top: 14px;
+    font-size: medium;
+    font-weight: bold;
+}
 
 
 

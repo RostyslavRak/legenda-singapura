@@ -42,7 +42,7 @@ angular.module('LegendSingapore.videoStoryTwoRecordVoice.ctrl', [])
             poem_cont: 'Berenang_renang ikan tenggiri, \n  Mengikut arus arah utara \n  Kasih saudara kekal abadi, \n  Menjadi pulau dua bersaudara.'
         }];
 
-        $scope.pantun = [{
+        $scope.pantun1 = [{
             done: false,
 
             audio: ngAudio.load('templates/story2/videoStoryTwoRecordVoice/comprehension/Comprehension-PB-Q1.mp3'),

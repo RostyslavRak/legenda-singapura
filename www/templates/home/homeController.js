@@ -3,6 +3,27 @@
 
   .controller('HomeController', function ($scope, $ionicModal, $ionicPlatform,ngAudio,$state,$cordovaVibration) {
 
+    $scope.messages = {
+      titleMain: 'HEllo1',
+      titleMain1: 'Hello2'
+    };
+    setTimeout(function () {
+      $scope.messages.success = true;
+    }, 1500);
+
+    setTimeout(function () {
+      $scope.messages.success = false;
+    }, 3500);
+
+    setTimeout(function () {
+      $scope.messages.success1 = true;
+    }, 3500);
+
+    setTimeout(function () {
+      $scope.messages.success1 = false;
+    }, 4500);
+
+
     $scope.duration = 100;
     $scope.tracks =
       {

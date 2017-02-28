@@ -2,6 +2,9 @@
     <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
     <div class="container">
         <div class="box_story_3">
+            <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">
+            <input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
+
             <form name="multiStepForm" class="form-validation" role="form" novalidate>
                 <div class="animate-switch-container" ng-switch on="stage"
                      ng-class="{forward: direction, backward:!direction}">

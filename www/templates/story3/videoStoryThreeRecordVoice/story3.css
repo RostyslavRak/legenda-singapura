@@ -55,11 +55,12 @@
     background-position: 50%;
     background-size: cover;
 }
+
 .story0_s3 {
     background-image: url(image/s3_SN1.jpg);
 }
 .story1_1_s3 {
-    background-image: url(image/intro_s3.jpg);
+    background-image: url(image/s3_main3.jpg);
 }
 .story2_1_s3 {
     background-image: url(image/s3_BG.jpg);
@@ -124,28 +125,47 @@
     background-image: url(image/s3_BG.jpg);
 }
 
-.text_frame1 {
-    width: 129px;
-    margin-top: 200px;
-    margin-left: 40px;
+.text_frame1_s3 {
+    position: absolute;
+    width: 57px;
+    margin-top: 301px;
+    margin-left: 13%;
     font-size: 12px;
-    padding: 11px 17px;
-    height: 44px;
     float: left;
-    background-size: 100% 100%;
-    background-image: url(image/bg_text.png);
+    bottom: 7%;
 }
-/*.dialog_box {*/
-    /*width: 100%;*/
-    /*font-size: 12px;*/
-    /*padding: 5px 17px;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*height: 80px;*/
-    /*float: left;*/
-    /*background-size: 100% 100%;*/
-    /*background-image: url(image/bg_dialog.png);*/
-/*}*/
+.text_frame2_s3 {
+    position: absolute;
+    width: 123px;
+    margin-left: 31%;
+    font-size: 12px;
+    float: left;
+    bottom: 7%;
+}
+
+.text_frame3_s3 {
+    position: absolute;
+    width: 60px;
+    bottom: 7%;
+    float: left;
+    font-size: 12px;
+    margin-left: 54%;
+}
+.text_frame4_s3 {
+    position: absolute;
+    width: 80px;
+    bottom: 7%;
+    float: left;
+    font-size: 12px;
+    margin-left: 73%;
+
+}
+.text_frame1_s3:hover, .text_frame3_s3:hover,
+.text_frame4_s3:hover, .text_frame2_s3:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .dialog_box_sc_3 {
     width: 123px;
     margin-top: 200px;
@@ -192,26 +212,11 @@ p.dialog_box_text2 {
 .game_box_button_s3:hover {
     transform: scale(1.2,1.5)
 }
-.text_frame1:hover, .text_frame2:hover {
-    color: #FFFFFF;
-    cursor: pointer;
-}
+
 .text_dialog_box {
 
 }
-.text_frame2 {
-    position: absolute;
-    width: 129px;
-    margin-top: 200px;
-    float: left;
-    font-size: 12px;
-    margin-left: 72%;
-    padding: 11px 36px;
-    height: 44px;
-    background-size: 100% 100%;
-    background-image: url(image/bg_text.png);
 
-}
 
 /*GAme options-----*/
 
