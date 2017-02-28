@@ -1,11 +1,11 @@
 
-.draggableContainer{
+.draggableContainerStory1{
   bottom: 45%;
   margin-left: 35%;
   width: 100%;
   position: absolute;
 }
-.droppableContainer{
+.droppableContainerStory1{
   margin-top: 38%;
   margin-left: 12%;
   width: 78%;
@@ -22,7 +22,6 @@
 }
 
 [ng-drag]{
-  background: url(img/boxGame.png);
   margin-left: 0;
   float: left;
   color: white;
@@ -43,7 +42,7 @@
   padding-top: 0;
 }
 
-.droppable{
+.droppableStory1{
   float: left;
   width: 11%;
   background: url(img/boxGame.png);
@@ -52,7 +51,8 @@
   background-repeat: no-repeat;
 }
 
-.draggable{
+.draggableStory1{
+  background: url(img/boxGame.png);
   width: 7%;
   height: 35px;
   float: left;
@@ -85,7 +85,7 @@
   text-align:center;
 }
 
-.game_start_story{
+.game_start_storyStory1{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -94,7 +94,7 @@
   background-image: url(img/StartGameOne.jpg);
 }
 
-.game_background_story_one{
+.game_background_story_oneStory1{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -103,7 +103,7 @@
   background-image: url(img/GameStoryOneBg.jpg);
 }
 
-.end_game_background_story_one{
+.end_game_background_story_oneStory1{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -112,7 +112,7 @@
   background-image: url(img/BG_End.jpg);
 }
 
-.game-over_background_story_one{
+.game-over_background_story_oneStory1{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -121,7 +121,7 @@
   background-image: url(img/gif4a.gif);
 }
 
-.buttonStartGameBox {
+.buttonStartGameBoxStory1 {
   margin-bottom: 2%;
   margin-left: -3%;
   position: absolute;
@@ -129,7 +129,7 @@
   width: 100%;
 }
 
-.buttonStartGame {
+.buttonStartGameStory1 {
   cursor: pointer;
   height: 30px;
   width: 60px;
@@ -141,7 +141,7 @@
   border: solid #966420 2px;
 }
 
-.dialog_box_game_start {
+.dialog_box_game_startStory1 {
   width: 100%;
   font-size: 12px;
   padding: 5px 17px;
@@ -154,7 +154,7 @@
 }
 
 
-.dialog_box_game_one {
+.dialog_box_game_oneStory1 {
   width: 100%;
   font-size: 12px;
   padding: 5px 17px;
@@ -166,16 +166,16 @@
   background-image: url(img/papirus.png);
 }
 
-.box_name_game_drag{
+.box_name_game_dragStory1{
   font-family: inherit;
   font-size: 20px;
   font-weight: bold;
   color: black;
-  margin-top: -55%;
+  margin-top: -60%;
 }
 
 
-.box_name_game_drop{
+.box_name_game_dropStory1{
   margin-top: 26%;
   font-family: inherit;
   font-size: 28px;
@@ -183,13 +183,13 @@
   color: black;
 }
 
-.total-time_end_game-one{
+.total-time_end_game-oneStory1{
   color: white;
   position: absolute;
   top: 40%;
   left: 40%;
 }
-.total-false_end_game-one{
+.total-false_end_game-oneStory1{
   color: white;
   position: absolute;
   top: 45%;

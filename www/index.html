@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
-    <title>ionic LegendSingapore</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+  <title>ionic LegendSingapore</title>
 
 
 
-    <!-- compiled css output -->
-    <link href="css/ionic.app.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <!-- compiled css output -->
+  <link href="css/ionic.app.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
 
-    <!-- compiled css -->
-    <link href="templates/home/homePage.css" rel="stylesheet">
-    <link href="templates/story1/storyOne.css" rel="stylesheet">
-    <link href="templates/story2/storyTwo.css" rel="stylesheet">
-    <link href="templates/story3/storyThree.css" rel="stylesheet">
-    <link href="templates/story4/storyFour.css" rel="stylesheet">
-    <link href="templates/story5/storyFive.css" rel="stylesheet">
-    <link href="templates/story6/storySix.css" rel="stylesheet">
+  <!-- compiled css -->
+  <link href="templates/home/homePage.css" rel="stylesheet">
+  <link href="templates/story1/storyOne.css" rel="stylesheet">
+  <link href="templates/story2/storyTwo.css" rel="stylesheet">
+  <link href="templates/story3/storyThree.css" rel="stylesheet">
+  <link href="templates/story4/storyFour.css" rel="stylesheet">
+  <link href="templates/story5/storyFive.css" rel="stylesheet">
+  <link href="templates/story6/storySix.css" rel="stylesheet">
 
-    <link href="templates/story1/videoStoryOneRecordVoice/story1.css" rel="stylesheet">
-    <link href="templates/story1/gameStoryOne/gameStory1.css" rel="stylesheet">
-    <link href="templates/story2/videoStoryTwoRecordVoice/story2.css" rel="stylesheet">
-    <link href="templates/story3/videoStoryThreeRecordVoice/story3.css" rel="stylesheet">
-    <link href="templates/story4/videoStoryFourRecordVoice/story4.css" rel="stylesheet">
-    <link href="templates/story5/videoStoryFiveRecordVoice/story5.css" rel="stylesheet">
-    <link href="templates/story6/videoStorySixRecordVoice/story6.css" rel="stylesheet">
+  <link href="templates/story1/videoStoryOneRecordVoice/story1.css" rel="stylesheet">
+  <link href="templates/story2/videoStoryTwoRecordVoice/story2.css" rel="stylesheet">
+  <link href="templates/story3/videoStoryThreeRecordVoice/story3.css" rel="stylesheet">
+  <link href="templates/story4/videoStoryFourRecordVoice/story4.css" rel="stylesheet">
+  <link href="templates/story5/videoStoryFiveRecordVoice/story5.css" rel="stylesheet">
+  <link href="templates/story6/videoStorySixRecordVoice/story6.css" rel="stylesheet">
 
+  <link href="templates/story1/gameStoryOne/gameStory1.css" rel="stylesheet">
+  <link href="templates/story6/gameStorySix/gameStory6.css" rel="stylesheet">
 
-
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="lib/ngDraggable/ngDraggable.js"></script>
-    <script src="lib/angular-ui-ace/ui-ace.min.js"></script>
-    <script src="lib/ngCordova/ng-cordova.js"></script>
-    <script src="lib/angular-audio/app/angular.audio.js"></script>
-    <script src="lib/angular-video-background/src/video-background.module.js"></script>
-    <script src="lib/angular/lodash.min.js"></script>
-
-    <script src="templates/story1/voiceRecorder/services.js"></script>
-
-
-
-
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="app.js"></script>
-  </head>
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/ngDraggable/ngDraggable.js"></script>
+  <script src="lib/angular-ui-ace/ui-ace.min.js"></script>
+  <script src="lib/ngCordova/ng-cordova.js"></script>
+  <script src="lib/angular-audio/app/angular.audio.js"></script>
+  <script src="lib/angular-video-background/src/video-background.module.js"></script>
+  <script src="lib/angular/lodash.min.js"></script>
+  <script src="templates/story1/voiceRecorder/services.js"></script>
 
 
 
 
-  <body ng-app="LegendSingapore" ng-controller="HomeController">
+  <!-- cordova script (this will be a 404 during development) -->
+  <!--<script src="cordova.js"></script>-->
 
-
-  <!--<input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">-->
-
-  <!--&lt;!&ndash;<input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()">&ndash;&gt;-->
-
-  <!--<input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">-->
-
+  <!-- your app's js -->
+  <script src="app.js"></script>
+</head>
 
 
 
 
+<body ng-app="LegendSingapore" ng-controller="HomeController">
+
+<div class="show_title" ng-show="messages.success">{{messages.titleMain}}</div>
+<div class="show_title1" data-ng-show="messages.success1">{{messages.titleMain1}}</div>
+<div class="show_title2" ng-click="openHomePage()" data-ng-show="messages.success2">{{messages.titleMain2}}</div>
+
+<input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">
+
+<!--<input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()">-->
+
+<input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
 
 
-      <ion-nav-view></ion-nav-view>
-
-    <script src="templates/home/homeController.js"></script>
-    <script src="templates/info/infoController.js"></script>
-    <script src="templates/story1/storyOneController.js"></script>
-    <script src="templates/story2/storyTwoController.js"></script>
-    <script src="templates/story3/storyThreeController.js"></script>
-    <script src="templates/story4/storyFourController.js"></script>
-    <script src="templates/story5/storyFiveController.js"></script>
-    <script src="templates/story6/storySixController.js"></script>
-    <script src="templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoiceController.js"></script>
-    <script src="templates/story1/voiceRecorder/playVoiceRecorderController.js"></script>
-    <script src="templates/story1/gameStoryOne/gameStoryOneController.js"></script>
-    <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
-    <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
-    <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
-    <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
-    <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
-    <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
-    <script src="templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoiceController.js"></script>
-    <script src="templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoiceController.js"></script>
 
 
-  </body>
+
+
+
+<ion-nav-view></ion-nav-view>
+
+<script src="templates/home/homeController.js"></script>
+<script src="templates/info/infoController.js"></script>
+<script src="templates/story1/storyOneController.js"></script>
+<script src="templates/story2/storyTwoController.js"></script>
+<script src="templates/story3/storyThreeController.js"></script>
+<script src="templates/story4/storyFourController.js"></script>
+<script src="templates/story5/storyFiveController.js"></script>
+<script src="templates/story6/storySixController.js"></script>
+<script src="templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoiceController.js"></script>
+<script src="templates/story1/voiceRecorder/playVoiceRecorderController.js"></script>
+<script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
+<script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
+<script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
+<script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
+<script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
+<script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
+<script src="templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoiceController.js"></script>
+<script src="templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoiceController.js"></script>
+
+<script src="templates/story1/gameStoryOne/gameStoryOneController.js"></script>
+<script src="templates/story6/gameStorySix/gameStorySixController.js"></script>
+
+
+</body>
 </html>

@@ -155,9 +155,14 @@
             url: '/story-six/videoStorySixRecordVoice',
             templateUrl: 'templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoice.html',
             controller: 'videoStorySixRecordVoiceController'
-          });
+          })
+        .state('gameStorySix', {
+          url: '/game/StorySix',
+          templateUrl: 'templates/story6/gameStorySix/gameStory6.html',
+          controller: 'GameStorySixController'
+        });
 
 
-        // if none of the above states are matched, use this as the fallback
+      // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });

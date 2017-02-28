@@ -1,0 +1,73 @@
+<ion-view>
+  <form name="multiStepForm" class="form-validation" role="form" novalidate>
+    <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
+      <div class="animate-switch game_start_storyStory6" ng-switch-default>
+        <div class="dialog_box_game_startStory6">
+          <p class="dialog_box_text1">
+            Ayuh! Bantulah saya menewaskan Si Halilintar! Ejalah dengan tepat! <br>
+            Kita boleh kalahkan Si Halilintar! Kalau salah…eja lagi dengan tepat!
+          </p>
+        </div>
+
+        <div class="buttonStartGameBoxStory6">
+          <button type="button" class="buttonStartGameStory6" ng-click="startTimer();next('stage')">Mula</button>
+        </div>
+
+      </div>
+
+      <div class="animate-switch game_background_story_oneStory6" ng-switch-when="stage">
+
+        <div class="heard_containerHallilintarStory6">
+          <div ng-repeat="heard in heardsHalilintar">
+            <div class="HeardGameStory6Left"></div>
+          </div>
+        </div>
+
+
+
+        <div class="heard_containerSingaStory6">
+          <div ng-repeat="heard in heardsSinga">
+            <div class="HeardGameStory6Right"></div>
+          </div>
+        </div>
+
+        <div class="Hallilintar_nameStory6"></div>
+        <div class="Singa_nameStory6"></div>
+
+
+
+
+        <div class="draggableContainerStory6">
+          <div ng-repeat="obj in draggableObjects"  ng-if="!obj.status" >
+            <div ng-drag="true" class=" draggableStory6" ng-drag-data="obj" data-allow-transform="true">
+              <div class="box_name_game_dragStory6">{{obj.name}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="droppableContainerStory6">
+          <div ng-repeat="obj in droppedObjects" class="droppableStory6"ng-drop="true"
+               ng-drop-success="onDropComplete($index, $data,$event)">
+            <div class="box_name_game_dropStory6"><span ng-if="obj.err" style="color: red">{{obj.name}}</span><span ng-if="!obj.err">{{obj.name}}</span></div>
+          </div>
+        </div>
+
+        <div class="dialog_box_game_oneStory6">
+          <p class="dialog_box_textStory6">
+            {{gameOne[stageGame].question}}
+          </p>
+        </div>
+      </div>
+
+      <div class="animate-switch end_game_background_story_oneStory6" ng-switch-when="stageEndGame">
+      <div class="total-time_end_game-oneStory6">Total Time: {{time}}</div>
+      <div class="total-false_end_game-oneStory6">False: {{countError}}</div>
+      </div>
+      <div class="animate-switch game-over_background_story_oneStory6" ng-switch-when="stageGameOver">
+      </div>
+    </div>
+  </form>
+
+</ion-view>
+
+

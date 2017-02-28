@@ -1,0 +1,202 @@
+
+.draggableContainerStory6{
+  z-index: 10;
+  bottom: 9%;
+  margin-left: 16%;
+  width: 100%;
+  position: absolute;
+}
+.droppableContainerStory6{
+  bottom: 23%;
+  z-index: 21;
+  margin-left: 22%;
+  width: 78%;
+  height: 15%;
+  position: absolute;
+}
+.droppableStory6{
+  width: 8%;
+  height: 40px;
+  float: left;
+  background: url(img/boxGame6.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.draggableStory6{
+  background: url(img/boxGame6.png);
+  width: 7%;
+  height: 35px;
+  float: left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.game_start_storyStory6{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/s6_SN11_R01.jpg);
+}
+
+.game_background_story_oneStory6{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/bgGameStory6.jpg);
+}
+
+.end_game_background_story_oneStory6{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/BG_End.jpg);
+}
+
+.game-over_background_story_oneStory6{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/gif4a.gif);
+}
+
+.buttonStartGameBoxStory6 {
+  margin-bottom: 2%;
+  margin-left: -3%;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+
+.buttonStartGameStory6 {
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  background: #e88a16;
+  float: right;
+  color: black;
+  font-weight: bold;
+  border: solid #966420 2px;
+}
+
+.dialog_box_game_startStory6 {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 17px;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  float: left;
+  background-size: 100% 100%;
+  background-image: url(img/bg_dialog.png);
+}
+
+
+.dialog_box_game_oneStory6 {
+  margin-left: 8%;
+  width: 85%;
+  font-size: 12px;
+  padding: 5px 17px;
+  position: absolute;
+  bottom: 0;
+  height: 37%;
+  background-size: 100% 100%;
+  background-image: url(img/papirGame6.png);
+}
+
+.box_name_game_dragStory6{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: -70%;
+}
+
+
+.box_name_game_dropStory6{
+  margin-top: 21%;
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+
+.total-time_end_game-oneStory6{
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.total-false_end_game-oneStory6{
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+
+.dialog_box_textStory6{
+  margin-top: 18%;
+  text-align: center;
+}
+
+
+.heard_containerHallilintarStory6{
+  position: absolute;
+  margin-top: 2%;
+  height: 5%;
+  width: 40%;
+  margin-left: 10%;
+}
+
+
+.heard_containerSingaStory6{
+  margin-left: 61%;
+  position: absolute;
+  margin-top: 2%;
+  height: 5%;
+  width: 30%;
+}
+
+.Hallilintar_nameStory6{
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 10%;
+  width: 20%;
+  padding: 5px 17px;
+  background-size: 100% 100%;
+  background-image: url(img/nameSnekeGama6.png);
+}
+
+.Singa_nameStory6{
+  margin-top: 5%;
+  float: right;
+  margin-right: 9%;
+  width: 20%;
+  padding: 5px 17px;
+  background-size: 100% 100%;
+  background-image: url(img/nameLeoGama6.png);
+}
+
+.HeardGameStory6Right{
+  float: right;
+  padding: 8px 10px;
+  background-size: 100% 100%;
+  background-image: url(img/heardGame6.png);
+}
+.HeardGameStory6Left{
+  float: left;
+  padding: 8px 10px;
+  background-size: 100% 100%;
+  background-image: url(img/heardGame6.png);
+}
+

@@ -1,4 +1,4 @@
-app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", function ($scope, ngAudio, $interval) {
+app.controller("GameStorySixController", ["$scope", "ngAudio", "$interval", function ($scope, ngAudio, $interval) {
 
   // $scope.duration = 100;
   // $scope.tracks =
@@ -23,8 +23,6 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
 
   // Navigation functions
   $scope.next = function (stage) {
-    //$scope.direction = 1;
-    //$scope.stage = stage;
     $scope.formValidation = true;
 
     if ($scope.multiStepForm.$valid) {
@@ -45,186 +43,62 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
   };
 
   $scope.gameOne = [{
-    // bergelora
-    question: "air laut yang berombak hebat",
+    // Halilintar
+    question: "mata petir; kilat",
     draggableObjects: [
-      {name: 'B', id: 1, status:false},
-      {name: 'E', id: 2, status:false},
-      {name: 'R', id: 3, status:false},
-      {name: 'G', id: 4, status:false},
-      {name: 'E', id: 2, status:false},
-      {name: 'L', id: 6, status:false},
-      {name: 'O', id: 7, status:false},
-      {name: 'R', id: 3, status:false},
-      {name: 'A', id: 9, status:false}
+      {name: 'H', id: 1, status:false},
+      {name: 'A', id: 2, status:false},
+      {name: 'L', id: 3, status:false},
+      {name: 'I', id: 4, status:false},
+      {name: 'L', id: 3, status:false},
+      {name: 'I', id: 4, status:false},
+      {name: 'N', id: 5, status:false},
+      {name: 'T', id: 6, status:false},
+      {name: 'A', id: 2, status:false},
+      {name: 'R', id: 7, status:false}
     ],
     droppedObjects: [
       {id: 1},
       {id: 2},
       {id: 3},
       {id: 4},
-      {id: 2},
-      {id: 6},
-      {id: 7},
       {id: 3},
-      {id: 9}
+      {id: 4},
+      {id: 5},
+      {id: 6},
+      {id: 2},
+      {id: 7}
     ]
   },
     {
-      // karam
-      question: "tenggelam ke dasar laut",
+      // duyung
+      question: "sejenis binatang laut",
       draggableObjects: [
-        {name: 'K', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'R', id: 3, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'M', id: 4, status:false}
+        {name: 'D', id: 1, status:false},
+        {name: 'U', id: 2, status:false},
+        {name: 'Y', id: 3, status:false},
+        {name: 'U', id: 2, status:false},
+        {name: 'N', id: 4, status:false},
+        {name: 'G', id: 5, status:false}
       ],
       droppedObjects: [
         {id: 1},
         {id: 2},
         {id: 3},
         {id: 2},
-        {id: 4}]
+        {id: 4},
+        {id: 5}
+        ]
     }, {
-      // mahkota
-      question: "alat kebesaran raja yang dipakai di kepala",
+      // sombong
+      question: "bersikap bongkak, angkuh",
       draggableObjects: [
-        {name: 'M', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'H', id: 3, status:false},
-        {name: 'K', id: 4, status:false},
-        {name: 'O', id: 5, status:false},
-        {name: 'T', id: 6, status:false},
-        {name: 'A', id: 2, status:false}
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 3},
-        {id: 4},
-        {id: 5},
-        {id: 6},
-        {id: 2}
-      ]
-    },
-    {
-      // harta
-      question: "barang-barang yang berharga",
-      draggableObjects: [
-        {name: 'H', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'R', id: 3, status:false},
-        {name: 'T', id: 4, status:false},
-        {name: 'A', id: 2, status:false}
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 3},
-        {id: 4},
-        {id: 2}
-      ]
-    },
-    {
-      // mendarat
-      question: "turun dari kapal di laut dan naik ke permukaan tanah",
-      draggableObjects: [
-        {name: 'M', id: 1, status:false},
-        {name: 'E', id: 2, status:false},
-        {name: 'N', id: 3, status:false},
-        {name: 'D', id: 4, status:false},
-        {name: 'A', id: 5, status:false},
-        {name: 'R', id: 6, status:false},
-        {name: 'A', id: 5, status:false},
-        {name: 'T', id: 7, status:false}
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 3},
-        {id: 4},
-        {id: 5},
-        {id: 6},
-        {id: 5},
-        {id: 7}
-      ]
-    },
-    {
-      // terpegun
-      question: "kaku dan tidak dapat berkata apa-apa",
-      draggableObjects: [
-        {name: 'T', id: 1, status:false},
-        {name: 'E', id: 2, status:false},
-        {name: 'R', id: 3, status:false},
-        {name: 'P', id: 4, status:false},
-        {name: 'E', id: 2, status:false},
-        {name: 'G', id: 6, status:false},
-        {name: 'U', id: 7, status:false},
-        {name: 'N', id: 8, status:false}
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 3},
-        {id: 4},
-        {id: 2},
-        {id: 6},
-        {id: 7},
-        {id: 8}
-      ]
-    },
-    {
-      // gagah
-      question: "kuat dan memiliki tenaga",
-      draggableObjects: [
-        {name: 'G', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'G', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'H', id: 3, status:false}
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 1},
-        {id: 2},
-        {id: 3}
-      ]
-    },
-    {
-      // namakan
-      question: "memberi sesuatu nama sebagai gelaran",
-      draggableObjects: [
-        {name: 'N', id: 1, status:false},
-        {name: 'A', id: 2, status:false},
+        {name: 'S', id: 1, status:false},
+        {name: 'O', id: 2, status:false},
         {name: 'M', id: 3, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'K', id: 4, status:false},
-        {name: 'A', id: 2, status:false},
-        {name: 'N', id: 1, status:false}
-
-      ],
-      droppedObjects: [
-        {id: 1},
-        {id: 2},
-        {id: 3},
-        {id: 2},
-        {id: 4},
-        {id: 2},
-        {id: 1}
-      ]
-    },
-    {
-      // kencang
-      question: "menjadi deras, laju, cepat",
-      draggableObjects: [
-        {name: 'K', id: 1, status:false},
-        {name: 'E', id: 2, status:false},
-        {name: 'N', id: 3, status:false},
-        {name: 'C', id: 4, status:false},
-        {name: 'A', id: 5, status:false},
-        {name: 'N', id: 3, status:false},
+        {name: 'B', id: 4, status:false},
+        {name: 'O', id: 2, status:false},
+        {name: 'N', id: 5, status:false},
         {name: 'G', id: 6, status:false}
       ],
       droppedObjects: [
@@ -232,23 +106,62 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
         {id: 2},
         {id: 3},
         {id: 4},
+        {id: 2},
         {id: 5},
-        {id: 3},
         {id: 6}
       ]
     },
-
     {
-      // bahtera
-      question: "sejenis kapal kayu yang besar",
+      // ganas
+      question: "bersifat liar, ganas, cenderung merosakkan harta benda",
       draggableObjects: [
-        {name: 'B', id: 1, status:false},
+        {name: 'G', id: 1, status:false},
         {name: 'A', id: 2, status:false},
-        {name: 'H', id: 3, status:false},
-        {name: 'T', id: 4, status:false},
-        {name: 'E', id: 5, status:false},
-        {name: 'R', id: 6, status:false},
-        {name: 'A', id: 2, status:false}
+        {name: 'N', id: 3, status:false},
+        {name: 'A', id: 2, status:false},
+        {name: 'S', id: 4, status:false}
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 2},
+        {id: 4}
+      ]
+    },
+    {
+      // musnah
+      question: "binasa sama sekali",
+      draggableObjects: [
+        {name: 'M', id: 1, status:false},
+        {name: 'U', id: 2, status:false},
+        {name: 'S', id: 3, status:false},
+        {name: 'N', id: 4, status:false},
+        {name: 'A', id: 5, status:false},
+        {name: 'H', id: 6, status:false}
+
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 4},
+        {id: 5},
+        {id: 6}
+
+      ]
+    },
+    {
+      // mengaum
+      question: "bunyi kuat yang dihasilkan oleh singa dan harimau",
+      draggableObjects: [
+        {name: 'M', id: 1, status:false},
+        {name: 'E', id: 2, status:false},
+        {name: 'N', id: 3, status:false},
+        {name: 'G', id: 4, status:false},
+        {name: 'A', id: 5, status:false},
+        {name: 'U', id: 6, status:false},
+        {name: 'M', id: 1, status:false}
       ],
       droppedObjects: [
         {id: 1},
@@ -257,10 +170,106 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
         {id: 4},
         {id: 5},
         {id: 6},
-        {id: 2}
+        {id: 1}
+      ]
+    },
+    {
+      // perahu
+      question: "sejenis pengangkutan laut, sampan besar",
+      draggableObjects: [
+        {name: 'P', id: 1, status:false},
+        {name: 'E', id: 2, status:false},
+        {name: 'R', id: 3, status:false},
+        {name: 'A', id: 4, status:false},
+        {name: 'H', id: 5, status:false},
+        {name: 'U', id: 6, status:false}
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 4},
+        {id: 5},
+        {id: 6}
+      ]
+    },
+    {
+      // nelayan
+      question: "penangkap ikan di lautan",
+      draggableObjects: [
+        {name: 'N', id: 1, status:false},
+        {name: 'E', id: 2, status:false},
+        {name: 'L', id: 3, status:false},
+        {name: 'A', id: 4, status:false},
+        {name: 'Y', id: 5, status:false},
+        {name: 'A', id: 4, status:false},
+        {name: 'N', id: 1, status:false}
+
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 4},
+        {id: 5},
+        {id: 4},
+        {id: 1}
+      ]
+    },
+    {
+      // panahan
+      question: "hasil perbuatan memanah atau melancarkan anak panah",
+      draggableObjects: [
+        {name: 'P', id: 1, status:false},
+        {name: 'A', id: 2, status:false},
+        {name: 'N', id: 3, status:false},
+        {name: 'A', id: 2, status:false},
+        {name: 'H', id: 4, status:false},
+        {name: 'A', id: 2, status:false},
+        {name: 'N', id: 3, status:false}
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 2},
+        {id: 4},
+        {id: 2},
+        {id: 3}
+      ]
+    },
+
+    {
+      // sakti
+      question: "memiliki kekuasaan yang diluar kemampuan manusia",
+      draggableObjects: [
+        {name: 'S', id: 1, status:false},
+        {name: 'A', id: 2, status:false},
+        {name: 'K', id: 3, status:false},
+        {name: 'T', id: 4, status:false},
+        {name: 'I', id: 5, status:false}
+
+      ],
+      droppedObjects: [
+        {id: 1},
+        {id: 2},
+        {id: 3},
+        {id: 4},
+        {id: 5}
       ]
     }
   ];
+
+
+  $scope.heardsHalilintar = [
+     {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
+  ];
+
+
+  $scope.heardsSinga = [
+    {},{},{}, {}, {}, {}, {}, {}, {}, {}
+  ];
+
 
   $scope.startTimer = function () {
     $interval(function () {
@@ -309,24 +318,28 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
     }
     if (_.find($scope.draggableObjects, {"status": false}) == undefined) {
       angular.forEach($scope.droppedObjects, function (drag) {
-        if(drag.id == drag.idS){
-          drag.err = false;
-        }else {
-          drag.err = true;
-        }
+          if(drag.id == drag.idS){
+            drag.err = false;
+          }else {
+            drag.err = true;
+          }
       });
 
 
       if($scope.gameOne[$scope.stageGame+1] != undefined){
         if(_.find($scope.droppedObjects, {"err": true})){
+          $scope.heardsSinga.splice(0, 1);
           $scope.countError ++;
-
-          if($scope.countError>=3){
-            $scope.next("stageGameOver")
+          if($scope.heardsSinga.length ===0){
+            console.log('game over')
           }
-          console.log( $scope.countError);
           setTimeout(showWords, 2000);
         }else {
+          if($scope.heardsHalilintar.length-1 ===0){
+            stop = true;
+            $scope.next('stageEndGame');
+          }
+          $scope.heardsHalilintar.splice(0, 1);
           $scope.stageGame++;
           showWords()
 
@@ -340,7 +353,6 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
         }
       }
     }
-
   };
 
 }]);

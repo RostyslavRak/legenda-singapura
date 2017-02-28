@@ -2,8 +2,8 @@
 
   <form name="multiStepForm" class="form-validation" role="form" novalidate>
     <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
-      <div class="animate-switch game_start_story" ng-switch-default>
-        <div class="dialog_box_game_start">
+      <div class="animate-switch game_start_storyStory1" ng-switch-default>
+        <div class="dialog_box_game_startStory1">
           <p class="dialog_box_text1">
             Ayuh! Kita selamatkan bahtera ini daripada tenggelam.<br>
             Eja dengan tepat. Campakkan ke laut!<br>
@@ -11,43 +11,41 @@
           </p>
         </div>
 
-        <div class="buttonStartGameBox">
-          <button type="button" class="buttonStartGame" ng-click="startTimer();next('stage')">Mula</button>
+        <div class="buttonStartGameBoxStory1">
+          <button type="button" class="buttonStartGameStory1" ng-click="startTimer();next('stage')">Mula</button>
         </div>
 
       </div>
 
-      <div class="animate-switch game_background_story_one" ng-switch-when="stage">
+      <div class="animate-switch game_background_story_oneStory1" ng-switch-when="stage">
 
-        <div class="draggableContainer">
-          <div ng-repeat="obj in draggableObjects">
-            <div ng-drag="true" class=" draggable" ng-drag-data="obj" data-allow-transform="true">
-              <div class="box_name_game_drag">{{obj.name}}</div>
+        <div class="draggableContainerStory1">
+          <div ng-repeat="obj in draggableObjects" ng-if="!obj.status">
+            <div ng-drag="true" class="draggableStory1" ng-drag-data="obj" data-allow-transform="true">
+              <div class="box_name_game_dragStory1">{{obj.name}}</div>
             </div>
           </div>
         </div>
 
-        <div class="droppableContainer">
-          <div ng-repeat="obj in droppedObjects" class="droppable" ng-drop="true"
+        <div class="droppableContainerStory1">
+          <div ng-repeat="obj in droppedObjects" class="droppableStory1" ng-drop="true"
                ng-drop-success="onDropComplete($index, $data,$event)">
-            <div class="box_name_game_drop"><span ng-if="obj.err" style="color: red">{{obj.name}}</span><span ng-if="!obj.err">{{obj.name}}</span></div>
+            <div class="box_name_game_dropStory1"><span ng-if="obj.err" style="color: red">{{obj.name}}</span><span ng-if="!obj.err">{{obj.name}}</span></div>
           </div>
         </div>
 
-        <div class="dialog_box_game_one">
+        <div class="dialog_box_game_oneStory1">
           <p class="dialog_box_text1">
             {{gameOne[stageGame].question}}
           </p>
         </div>
       </div>
 
-      <div class="animate-switch end_game_background_story_one" ng-switch-when="stageEndGame">
-      <div class="total-time_end_game-one">Total Time: {{time}}</div>
-      <div class="total-false_end_game-one">False: {{countError}}</div>
+      <div class="animate-switch end_game_background_story_oneStory1" ng-switch-when="stageEndGame">
+      <div class="total-time_end_game-oneStory1">Total Time: {{time}}</div>
+      <div class="total-false_end_game-oneStory1">False: {{countError}}</div>
       </div>
-      <div class="animate-switch game-over_background_story_one" ng-switch-when="stageGameOver">
-        <!--<div class="total-time_end_game-one">Total Time: {{time}}</div>-->
-        <!--<div class="total-false_end_game-one">False: {{countError}}</div>-->
+      <div class="animate-switch game-over_background_story_oneStory1" ng-switch-when="stageGameOver">
       </div>
     </div>
   </form>
