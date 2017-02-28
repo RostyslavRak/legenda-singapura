@@ -15,8 +15,8 @@
 
     $scope.goHome = function () {
       $state.go('home');
-      console.log("vibrating");
-      $cordovaVibration.vibrate($scope.duration);
+      // console.log("vibrating");
+      // $cordovaVibration.vibrate($scope.duration);
     };
 
 

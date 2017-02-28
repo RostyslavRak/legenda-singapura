@@ -9,7 +9,6 @@
 
 
     <!-- compiled css output -->
-    <!--<link href="lib/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">-->
     <link href="css/ionic.app.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -40,7 +39,9 @@
     <script src="lib/ngCordova/ng-cordova.js"></script>
     <script src="lib/angular-audio/app/angular.audio.js"></script>
     <script src="lib/angular-video-background/src/video-background.module.js"></script>
+    <script src="lib/angular/lodash.min.js"></script>
 
+    <script src="templates/story1/voiceRecorder/services.js"></script>
 
 
 
@@ -58,11 +59,9 @@
   <body ng-app="LegendSingapore" ng-controller="HomeController">
 
 
-  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()"/>
+  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">
 
-  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ui-sref="gameStoryOne"/>
-
-  <input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()"/>
+  <input class="myButtonInfo" type="image" src="templates/home/img/btn/information.png" ng-click="modal.show()">
 
   <input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
 
@@ -72,9 +71,7 @@
 
 
 
-      <ion-nav-view>
-
-    </ion-nav-view>
+      <ion-nav-view></ion-nav-view>
 
     <script src="templates/home/homeController.js"></script>
     <script src="templates/info/infoController.js"></script>
@@ -85,15 +82,17 @@
     <script src="templates/story5/storyFiveController.js"></script>
     <script src="templates/story6/storySixController.js"></script>
     <script src="templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoiceController.js"></script>
+    <script src="templates/story1/voiceRecorder/playVoiceRecorderController.js"></script>
     <script src="templates/story1/gameStoryOne/gameStoryOneController.js"></script>
-  <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
-  <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
-  <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
-  <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
-  <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
-  <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
-  <script src="templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoiceController.js"></script>
-  <script src="templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoiceController.js"></script>
+    <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
+    <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
+    <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
+    <script src="templates/story2/videoStoryTwoRecordVoice/videoStoryTwoRecordVoiceController.js"></script>
+    <script src="templates/story3/videoStoryThreeRecordVoice/videoStoryThreeRecordVoiceController.js"></script>
+    <script src="templates/story4/videoStoryFourRecordVoice/videoStoryFourRecordVoiceController.js"></script>
+    <script src="templates/story5/videoStoryFiveRecordVoice/videoStoryFiveRecordVoiceController.js"></script>
+    <script src="templates/story6/videoStorySixRecordVoice/videoStorySixRecordVoiceController.js"></script>
+
 
   </body>
 </html>

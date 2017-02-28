@@ -54,7 +54,7 @@ angular.module('LegendSingapore.videoStoryThreeRecordVoice.ctrl', [])
     }];
     // END ------ Poems_story4___
 
-        $scope.formParams = {};
+   $scope.formParams = {};
   $scope.stage = "";
   $scope.formValidation = false;
   $scope.toggleObjView = false;

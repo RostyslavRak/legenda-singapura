@@ -8,10 +8,12 @@
     'ngDraggable',
 
     // modules
+    'LegendSingapore.services',
     'LegendSingapore.home.ctrl',
     'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
+    'LegendSingapore.PlayVoiceRecorder.ctrl',
     'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.videoStoryFourRecordVoice.ctrl',
@@ -22,24 +24,13 @@
     'LegendSingapore.storyFour.ctrl',
     'LegendSingapore.storyFive.ctrl',
     'LegendSingapore.storySix.ctrl'
+
+
   ])
 
 
     .run(function($ionicPlatform) {
       $ionicPlatform.ready(function() {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
-
-        // then override any default you want
-        // window.plugins.nativepagetransitions.globalOptions.duration = 500;
-        // window.plugins.nativepagetransitions.globalOptions.iosdelay = 350;
-        // window.plugins.nativepagetransitions.globalOptions.androiddelay = 350;
-        // window.plugins.nativepagetransitions.globalOptions.winphonedelay = 350;
-        // window.plugins.nativepagetransitions.globalOptions.slowdownfactor = 4;
-        // // these are used for slide left/right only currently
-        // window.plugins.nativepagetransitions.globalOptions.fixedPixelsTop = 0;
-        // window.plugins.nativepagetransitions.globalOptions.fixedPixelsBottom = 0;
-
         if (window.cordova && window.cordova.plugins.Keyboard) {
           cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
           cordova.plugins.Keyboard.disableScroll(true);
@@ -53,7 +44,6 @@
     })
 
     .config(function($stateProvider, $urlRouterProvider) {
-
       $stateProvider
 
         .state('home', {
@@ -74,6 +64,11 @@
           url: '/story-one/videoStoryOneRecordVoice',
           templateUrl: 'templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoice.html',
           controller: 'videoStoryOneRecordVoiceController'
+        })
+        .state('playVoiceRecorder', {
+          url: '/story-one/playVoiceRecorder',
+          templateUrl: 'templates/story1/voiceRecorder/playVoiceRecorder.html',
+          controller: 'PlayVoiceRecorderController'
         })
         .state('gameStoryOne', {
           url: '/game/StoryOne',
