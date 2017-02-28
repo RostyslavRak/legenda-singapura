@@ -6,21 +6,27 @@
     $scope.duration = 100;
     $scope.tracks =
       {
-        audio: ngAudio.load('audio/Home.mp3')
+        audio: ngAudio.load('audio/Home1.mp3')
       };
     $scope.track = $scope.tracks.audio;
-    $scope.track.volume = 0.02;
-    $scope.track.play();
+    $scope.track.volume = 0.03;
+     $scope.track.play();
 
 
     $scope.goHome = function () {
       $state.go('home');
-      console.log("vibrating");
-      $cordovaVibration.vibrate($scope.duration);
+      // console.log("vibrating");
+      // $cordovaVibration.vibrate($scope.duration);
     };
+
+
       $ionicModal.fromTemplateUrl('templates/info/info.html', {
         scope: $scope
       }).then(function(modal) {
         $scope.modal = modal;
       });
+
+
+
+
   });

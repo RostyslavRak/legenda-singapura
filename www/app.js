@@ -5,12 +5,15 @@
     'ui.ace',
     'ngAudio',
     'video-background',
+    'ngDraggable',
 
     // modules
+    'LegendSingapore.services',
     'LegendSingapore.home.ctrl',
     'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
     'LegendSingapore.videoStoryOneRecordVoice.ctrl',
+    'LegendSingapore.PlayVoiceRecorder.ctrl',
     'LegendSingapore.videoStoryTwoRecordVoice.ctrl',
     'LegendSingapore.videoStoryThreeRecordVoice.ctrl',
     'LegendSingapore.videoStoryFourRecordVoice.ctrl',
@@ -21,26 +24,26 @@
     'LegendSingapore.storyFour.ctrl',
     'LegendSingapore.storyFive.ctrl',
     'LegendSingapore.storySix.ctrl'
+
+
   ])
 
 
-    .run(function ($ionicPlatform) {
-
-      $ionicPlatform.ready(function () {
-
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
+    .run(function($ionicPlatform) {
+      $ionicPlatform.ready(function() {
         if (window.cordova && window.cordova.plugins.Keyboard) {
           cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+          cordova.plugins.Keyboard.disableScroll(true);
+
         }
         if (window.StatusBar) {
+          // org.apache.cordova.statusbar required
           StatusBar.styleDefault();
         }
-      })
+      });
     })
 
     .config(function($stateProvider, $urlRouterProvider) {
-
       $stateProvider
 
         .state('home', {
@@ -62,6 +65,17 @@
           templateUrl: 'templates/story1/videoStoryOneRecordVoice/videoStoryOneRecordVoice.html',
           controller: 'videoStoryOneRecordVoiceController'
         })
+        .state('playVoiceRecorder', {
+          url: '/story-one/playVoiceRecorder',
+          templateUrl: 'templates/story1/voiceRecorder/playVoiceRecorder.html',
+          controller: 'PlayVoiceRecorderController'
+        })
+        .state('gameStoryOne', {
+          url: '/game/StoryOne',
+          templateUrl: 'templates/story1/gameStoryOne/gameStory1.html',
+          controller: 'GameStoryOneController'
+        })
+
 
         .state('story-two', {
           url: '/story-two',
@@ -69,7 +83,7 @@
           controller: 'storyTwoController'
         })
           .state('videoStory2', {
-            url: '/story-two/videoStory2',
+            url: '/story-twe/videoStory2',
             templateUrl: 'templates/story2/video/videoStoryTwo.html'
           })
           .state('videoStoryTwoRecordVoice', {
@@ -147,4 +161,3 @@
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
     });
-

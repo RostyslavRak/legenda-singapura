@@ -1,0 +1,197 @@
+
+.draggableContainer{
+  bottom: 45%;
+  margin-left: 35%;
+  width: 100%;
+  position: absolute;
+}
+.droppableContainer{
+  margin-top: 38%;
+  margin-left: 12%;
+  width: 78%;
+  height: 16%;
+}
+#scoreArea{
+  width: 100px;
+  height: 330px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+[ng-drag]{
+  background: url(img/boxGame.png);
+  margin-left: 0;
+  float: left;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  cursor: move;
+  width: 8%;
+  height: 45px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+[ng-drop] {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 255, 0, 0.5);
+  text-align: center;
+  padding-top: 0;
+}
+
+.droppable{
+  float: left;
+  width: 11%;
+  background: url(img/boxGame.png);
+  height: 47px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.draggable{
+  width: 7%;
+  height: 35px;
+  float: left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#scoreHeader{
+  font-family:'Conv_comic',Sans-Serif;
+  margin:0 auto;
+  text-align:center;
+  font-size:1.5em;
+  border-bottom:1px solid red;
+  margin-top:20px;
+}
+
+#scoreText{
+  font-family:'Conv_KBZipaDeeDooDah';
+  margin:0 auto;
+  text-align:center;
+  font-size:8em;
+  margin-top:20px;
+  color:#f93d00;
+}
+
+#doraemonArea{
+  width:100%;
+  min-height:50px;
+  overflow:auto;
+  text-align:center;
+}
+
+.game_start_story{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/StartGameOne.jpg);
+}
+
+.game_background_story_one{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/GameStoryOneBg.jpg);
+}
+
+.end_game_background_story_one{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/BG_End.jpg);
+}
+
+.game-over_background_story_one{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(img/gif4a.gif);
+}
+
+.buttonStartGameBox {
+  margin-bottom: 2%;
+  margin-left: -3%;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+
+.buttonStartGame {
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  background: #e88a16;
+  float: right;
+  color: black;
+  font-weight: bold;
+  border: solid #966420 2px;
+}
+
+.dialog_box_game_start {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 17px;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  float: left;
+  background-size: 100% 100%;
+  background-image: url(img/bg_dialog.png);
+}
+
+
+.dialog_box_game_one {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 17px;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  float: left;
+  background-size: 100% 100%;
+  background-image: url(img/papirus.png);
+}
+
+.box_name_game_drag{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: -55%;
+}
+
+
+.box_name_game_drop{
+  margin-top: 26%;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+}
+
+.total-time_end_game-one{
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.total-false_end_game-one{
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
