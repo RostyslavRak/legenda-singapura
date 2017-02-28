@@ -313,8 +313,8 @@
                             <form>
                                 <input class="comprehension_box_voice_s1" type="image"
                                        ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                       ng-click="pantun1[countQuestion].audio.paused ? pantun[countQuestion].audio.play() : pantun1[countQuestion].audio.pause(); src = pantun1[countQuestion].audio.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-                                <p class="comprehension_box_title_s1">{{pantun[countQuestion].question}}</p>
+                                       ng-click="pantun1[countQuestion].audio.paused ? pantun1[countQuestion].audio.play() : pantun1[countQuestion].audio.pause(); src = pantun1[countQuestion].audio.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                <p class="comprehension_box_title_s1">{{pantun1[countQuestion].question}}</p>
                                 <br>
                                 <label ng-repeat="answer in pantun1[countQuestion].answers"
                                        ng-click="answer.done = true;">

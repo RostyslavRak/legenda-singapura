@@ -3,6 +3,7 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
 
     // START ______ Playlist of voices for characters
     $scope.duration = 100;
+    $scope.countQuestion = 0;
     $scope.tracks =
     {
       audio1: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU_1.mp3'),
