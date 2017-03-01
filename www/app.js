@@ -8,7 +8,6 @@
     'ngDraggable',
 
     // modules
-    'LegendSingapore.services',
     'LegendSingapore.home.ctrl',
     'LegendSingapore.info.ctrl',
     'LegendSingapore.storyOne.ctrl',
@@ -58,7 +57,8 @@
         })
         .state('videoStory1', {
           url: '/story-one/videoStory1',
-          templateUrl: 'templates/story1/video/videoStoryOne.html'
+          templateUrl: 'templates/story1/video/videoStoryOne.html',
+          controller: 'storyOneController'
         })
         .state('videoStoryOneRecordVoice', {
           url: '/story-one/videoStoryOneRecordVoice',

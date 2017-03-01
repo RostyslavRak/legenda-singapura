@@ -2,11 +2,17 @@
   <ion-view>
 
     <ion-content scroll="false">
+
+      <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goStory0ne()">
+
+
       <div class="videoStoryOne">
-      <video autoplay loop poster="">
-        <source src="templates/story1/video/storyOneVideo.mp4" type="video/mp4">
-      </video>
+        <video-background  class="bg-video" autoplay="true" key-controls="true"
+                          on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                          source="fullVideo" >
+        </video-background>
       </div>
+
   </ion-content>
 </ion-view>
 

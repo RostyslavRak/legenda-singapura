@@ -1,4 +1,5 @@
 <ion-view>
+  <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goStory0ne()">
 
   <form name="multiStepForm" class="form-validation" role="form" novalidate>
     <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
@@ -43,7 +44,7 @@
 
       <div class="animate-switch end_game_background_story_oneStory1" ng-switch-when="stageEndGame">
       <div class="total-time_end_game-oneStory1">Total Time: {{time}}</div>
-      <div class="total-false_end_game-oneStory1">False: {{countError}}</div>
+      <div class="total-false_end_game-oneStory1">False: {{countError}}:10</div>
       </div>
       <div class="animate-switch game-over_background_story_oneStory1" ng-switch-when="stageGameOver">
       </div>

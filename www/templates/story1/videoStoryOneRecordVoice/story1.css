@@ -172,16 +172,16 @@ p.dialog_box_text2 {
 
 /*---------Games options--------*/
 .bg_poems_s1 {
-    width: 71%;
-    font-size: 12px;
-    padding: 54px 17px;
-    position: absolute;
-    bottom: 29px;
-    height: 300px;
-    margin-left: 15%;
-    float: left;
-    background-size: 100% 100%;
-    background-image: url(image/bg_dialog.png);
+  width: 71%;
+  font-size: 12px;
+  padding: 54px 17px;
+  position: absolute;
+  bottom: 30%;
+  height: 50%;
+  margin-left: 15%;
+  float: left;
+  background-size: 100% 100%;
+  background-image: url(image/bg_dialog.png);
 }
 
 .bg_poems_text1_s1 {
@@ -226,4 +226,8 @@ input.comprehension_box_voice_s1 {
     padding-top: 14px;
     font-size: medium;
     font-weight: bold;
+}
+.comprehension_box_voice_pantun {
+  width: 50px;
+  float: left;
 }

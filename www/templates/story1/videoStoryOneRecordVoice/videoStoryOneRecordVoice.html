@@ -1,22 +1,16 @@
 <ion-view>
-    <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
+
+  <!--<ion-content scroll="false" class="bagHomePage_R" padding="true">-->
     <div class="container">
         <div class="box_story_1">
-            <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goHome()">
+          <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="goStory0ne()">
             <input type="image" ng-init="src = 'templates/home/img/btn/Audio.png'" ng-src="{{src}}" class="myButtonVoice" ng-class="track.paused ? 'ion-android-volume-off' : 'ion-android-volume-up'" ng-click="track.paused ? track.play() : track.pause(); src = track.paused ? 'templates/home/img/btn/Audio.png' : 'templates/home/img/btn/mute.png'">
 
             <form name="multiStepForm" class="form-validation" role="form" novalidate>
                 <div class="animate-switch-container" ng-switch on="stage"
                      ng-class="{forward: direction, backward:!direction}">
-                    <!--Story 1 - page 0-->
-                    <div class="animate-switch position story0" ng-switch-default>
-                        <div class="buttons0">
-                            <input style="width: 50px" type="image" class="buttons2"
-                                   src='templates/home/img/btn/next button.png' ng-click="next('stage1')">
-                        </div>
-                    </div>
                     <!--Story 1 - page 1-->
-                    <div class="animate-switch position story1_1" ng-switch-when="stage1">
+                    <div class="animate-switch position story1_1" ng-switch-default>
                         <div class="text_frame1" ng-click="tracks.audioIntro1.play()">
                             <p>Sang Nila Utama</p>
                         </div>
@@ -33,8 +27,11 @@
 
                     <!--Story 1 - page 2-->
 
-                    <div class="animate-switch position story2_1" ng-switch-when="stage2">
-
+                    <div class="animate-switch position" ng-switch-when="stage2">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s1" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 Mamanda, pulau apakah itu? Sungguh indah” tanya Sang Nila Utama.<br>
@@ -48,14 +45,19 @@
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/story1/videoStoryOneRecordVoice/image/play button.png'"
                                    ng-src="{{src}}"
-                                   ng-click="tracks.audio1.paused ? tracks.audio1.play() : tracks.audio1.pause(); src = tracks.audio1.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio1.paused ? tracks.audio1.play() : tracks.audio1.pause(); src = tracks.audio1.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage3')">
                         </div>
                     </div>
                     <!--Story 1 - page 3-->
 
-                    <div class="animate-switch position story3_1" ng-switch-when="stage3">
+                    <div class="animate-switch position " ng-switch-when="stage3">
+
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s2" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 Angin bertiup <strong style="color: red">kencang.</strong><br>
@@ -69,15 +71,18 @@
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/story1/videoStoryOneRecordVoice/image/play button.png'"
                                    ng-src="{{src}}"
-                                   ng-click="tracks.audio2.paused ? tracks.audio2.play() : tracks.audio2.pause(); src = tracks.audio2.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio2.paused ? tracks.audio2.play() : tracks.audio2.pause(); src = tracks.audio2.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage4')">
                         </div>
                     </div>
                     <!--Story 1 - page 4-->
 
-
-                    <div class="animate-switch position story5_1" ng-switch-when="stage4">
+                    <div class="animate-switch position " ng-switch-when="stage4">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s3" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 <strong style="color: red">Bahtera</strong>
@@ -91,7 +96,7 @@
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/story1/videoStoryOneRecordVoice/image/play button.png'"
                                    ng-src="{{src}}"
-                                   ng-click="tracks.audio3.paused ? tracks.audio3.play() : tracks.audio3.pause(); src = tracks.audio3.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio3.paused ? tracks.audio3.play() : tracks.audio3.pause(); src = tracks.audio3.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage5')">
                         </div>
@@ -99,11 +104,17 @@
 
                     <!--Story 1 - page 6-->
 
-                    <div class="animate-switch position story6_1" ng-switch-when="stage5">
+                    <div class="animate-switch position" ng-switch-when="stage5">
+
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s4" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Tuanku semua barang dan <strong style="color: red">harta</strong>
-                                harta telah pun anak kapal buang ke laut,” Kata Mamanda. “Ampun Tuanku…” kata Mamanda.
+                                harta telah pun anak kapal buang ke laut,” Kata Mamanda.<br>
+                              “Ampun Tuanku…” kata Mamanda.
                             </p>
                         </div>
                         <div class="buttons0">
@@ -112,7 +123,7 @@
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/story1/videoStoryOneRecordVoice/image/play button.png'"
                                    ng-src="{{src}}"
-                                   ng-click="tracks.audio4.paused ? tracks.audio4.play() : tracks.audio4.pause(); src = tracks.audio4.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio4.paused ? tracks.audio4.play() : tracks.audio4.pause(); src = tracks.audio4.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage6')">
                         </div>
@@ -120,11 +131,17 @@
 
                     <!--Story 1 - page 7-->
 
-                    <div class="animate-switch position story7_1" ng-switch-when="stage6">
+                    <div class="animate-switch position " ng-switch-when="stage6">
+
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s5" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Ampun Tuanku, nampaknya tinggal <strong style="color: red">mahkota</strong>
-                                Tuanku sahaja yang belum dicampakkan ke laut ,” jelas Mamanda.
+                                Tuanku sahaja yang belum dicampakkan ke laut ,”<br>
+                              jelas Mamanda.
                             </p>
                         </div>
                         <div class="buttons0">
@@ -133,7 +150,7 @@
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/story1/videoStoryOneRecordVoice/image/play button.png'"
                                    ng-src="{{src}}"
-                                   ng-click="tracks.audio5.paused ? tracks.audio5.play() : tracks.audio5.pause(); src = tracks.audio5.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio5.paused ? tracks.audio5.play() : tracks.audio5.pause(); src = tracks.audio5.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage7')">
                         </div>
@@ -141,7 +158,11 @@
 
                     <!--Story 1 - page 8-->
 
-                    <div class="animate-switch position story8_1" ng-switch-when="stage7">
+                    <div class="animate-switch position " ng-switch-when="stage7">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s6" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Mahkota beta?” Kata Sang Nila Utama terkejut.
@@ -152,7 +173,7 @@
                                    class="buttons1" ng-click="back('stage6')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio6.paused ? tracks.audio6.play() : tracks.audio6.pause(); src = tracks.audio6.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio6.paused ? tracks.audio6.play() : tracks.audio6.pause(); src = tracks.audio6.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage8')">
                         </div>
@@ -160,7 +181,11 @@
 
                     <!--Story 1 - page 9-->
 
-                    <div class="animate-switch position story9_1" ng-switch-when="stage8">
+                    <div class="animate-switch position " ng-switch-when="stage8">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s7" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Jika ini dapat menyelamatkan kita, akan beta campakkan
@@ -174,7 +199,7 @@
                                    class="buttons1" ng-click="back('stage7')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio7.paused ? tracks.audio7.play() : tracks.audio7.pause(); src = tracks.audio7.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio7.paused ? tracks.audio7.play() : tracks.audio7.pause(); src = tracks.audio7.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage9')">
                         </div>
@@ -182,7 +207,11 @@
 
                     <!--Story 1 - page 10-->
 
-                    <div class="animate-switch position story10_1" ng-switch-when="stage9">
+                    <div class="animate-switch position " ng-switch-when="stage9">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s9" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 Sebaik-baik sahaja mahkota itu dilontar ke laut, keadaan kembali tenang.
@@ -193,7 +222,7 @@
                                    class="buttons1" ng-click="back('stage8')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio8.paused ? tracks.audio8.play() : tracks.audio8.pause(); src = tracks.audio8.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio8.paused ? tracks.audio8.play() : tracks.audio8.pause(); src = tracks.audio8.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage10')">
                         </div>
@@ -201,7 +230,11 @@
 
                     <!--Story 1 - page 11-->
 
-                    <div class="animate-switch position story11_1" ng-switch-when="stage10">
+                    <div class="animate-switch position" ng-switch-when="stage10">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s10" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 Sang Nila Utama dan anak-anak kapalnya selamat
@@ -213,7 +246,7 @@
                                    class="buttons1" ng-click="back('stage9')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio9.paused ? tracks.audio9.play() : tracks.audio9.pause(); src = tracks.audio9.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio9.paused ? tracks.audio9.play() : tracks.audio9.pause(); src = tracks.audio9.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage11')">
                         </div>
@@ -222,7 +255,11 @@
 
                     <!--Story 1 - page 12-->
 
-                    <div class="animate-switch position story12_1" ng-switch-when="stage11">
+                    <div class="animate-switch position" ng-switch-when="stage11">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s11" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 Setibanya di Temasek…
@@ -235,7 +272,7 @@
                                    class="buttons1" ng-click="back('stage10')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio10.paused ? tracks.audio10.play() : tracks.audio10.pause(); src = tracks.audio10.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio10.paused ? tracks.audio10.play() : tracks.audio10.pause(); src = tracks.audio10.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage12')">
                         </div>
@@ -243,7 +280,11 @@
 
                     <!--Story 1 - page 13-->
 
-                    <div class="animate-switch position story13_1" ng-switch-when="stage12">
+                    <div class="animate-switch position " ng-switch-when="stage12">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s12" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Binatang apakah itu? Adakah ia harimau atau serigala?” <br>
@@ -256,14 +297,18 @@
                                    class="buttons1" ng-click="back('stage11')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio11.paused ? tracks.audio11.play() : tracks.audio11.pause(); src = tracks.audio11.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio11.paused ? tracks.audio11.play() : tracks.audio11.pause(); src = tracks.audio11.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage13')">
                         </div>
                     </div>
                     <!--Story 1 - page 14-->
 
-                    <div class="animate-switch position story14_1" ng-switch-when="stage13">
+                    <div class="animate-switch position" ng-switch-when="stage13">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s13" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Ia sungguh <strong style="color: red">gagah</strong>!” Kata Sang Nila Utama.
@@ -274,14 +319,18 @@
                                    class="buttons1" ng-click="back('stage12')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio12.paused ? tracks.audio12.play() : tracks.audio12.pause(); src = tracks.audio12.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio12.paused ? tracks.audio12.play() : tracks.audio12.pause(); src = tracks.audio12.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
                                    src='templates/home/img/btn/next button.png' ng-click="next('stage14')">
                         </div>
                     </div>
                     <!--Story 1 - page 15-->
 
-                    <div class="animate-switch position story15_1" ng-switch-when="stage14">
+                    <div class="animate-switch position" ng-switch-when="stage14">
+                      <video-background class="bg-video" autoplay="true" key-controls="true"
+                                        on-firstplay="isStarted = true" on-firstend="isEnded = true"
+                                        source="video_s14" >
+                      </video-background>
                         <div class="dialog_box">
                             <p class="dialog_box_text1">
                                 “Kalau begitu, beta <strong style="color: red">namakan</strong> pulau ini Singapura!”
@@ -296,20 +345,33 @@
                                    class="buttons1" ng-click="back('stage13')">
                             <input style="width: 50px; margin-left: 5%" type="image"
                                    ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="tracks.audio13.paused ? tracks.audio13.play() : tracks.audio13.pause(); src = tracks.audio13.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                   ng-click="tracks.audio13.paused ? tracks.audio13.play() : tracks.audio13.pause(); src = tracks.audio13.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                             <input style="width: 50px" type="image" class="buttons2"
-                                   src='templates/home/img/btn/next button.png' ng-click="next('stage15')">
+                                   src='templates/home/img/btn/next button.png' ng-click="next('stage14a')">
                         </div>
                     </div>
 
 
+
+
+                  <!--START         page select game -->
+                  <div class="animate-switch position bagStory1Page" ng-switch-when="stage14a">
+                    <div class="Btn1Story1"><button class="button button-small" ng-click="next('stage16')">Pantun</button></div>
+
+                    <div class="Btn2Story1"><button class="button button-small" ui-sref="gameStoryOne">Kosa Kata</button></div>
+
+                    <div class="Btn3Story1"><button class="button button-small" ng-click="next('stage15')">Kefahaman</button></div>
+                  </div>
+
                     <!--START         Comprehension       questions -->
                     <div class="animate-switch position story15_1" ng-switch-when="stage15">
-                        <div class="comprehension_box_s1">
+                      <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="next('stage14a')">
+
+                      <div class="comprehension_box_s1">
                             <form>
                                 <input class="comprehension_box_voice_s1" type="image"
                                        ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                       ng-click="pantun1[countQuestion].audio.paused ? pantun1[countQuestion].audio.play() : pantun1[countQuestion].audio.pause(); src = pantun1[countQuestion].audio.paused ? 'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
+                                       ng-click="pantun1[countQuestion].audio.paused ? pantun1[countQuestion].audio.play() : pantun1[countQuestion].audio.pause(); src = pantun1[countQuestion].audio.paused ? 'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
                                 <p class="comprehension_box_title_s1">{{pantun1[countQuestion].question}}</p>
                                 <br>
                                 <label ng-repeat="answer in pantun1[countQuestion].answers"
@@ -324,13 +386,8 @@
                                        class="buttons2" src='templates/home/img/btn/next button.png'
                                        ng-show="pantun1[countQuestion].done"
                                        ng-click="countQuestion = countQuestion + 1"> </input>
+
                             </form>
-                        </div>
-                        <div class="buttons0">
-                            <input style="width: 50px" type="image" src='templates/home/img/btn/previous button.png'
-                                   class="buttons1" ng-click="back('stage14')">
-                            <input style="width: 50px" type="image" class="buttons2"
-                                   src='templates/home/img/btn/next button.png' ng-click="next('stage16')">
                         </div>
                     </div>
                     <!--END        Comprehension       questions -->
@@ -338,41 +395,51 @@
 
                     <!--START         Pantum        poems -->
                     <div class="animate-switch position story15_1" ng-switch-when="stage16">
-                        <div class="bg_poems_s1">
-                            <p style="text-align: center">Pantun</p>
-                            <input class="bg_poems_button_s1" style="width: 50px; margin-left: 5%" type="image"
-                                   ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent = true; src = poems[0].poem1_au.paused ?
-                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-                            <p ng-if="poems[0].showContent" class="bg_poems_text1_s1">
-                                {{poems[0].poem_cont}}
-                            </p>
+                      <input class="myButtonMap" type="image" src="templates/home/img/btn/map.png" ng-click="next('stage14a')">
 
-                            <input class="bg_poems_button_s1" ng-if="poems[0].showContent"
-                                   style="width: 50px; margin-left: 5%" type="image"
-                                   ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="poems[1].poem1_au.paused ? poems[1].poem1_au.play() : poems[1].poem1_au.pause(); poems[1].showContent = true; src = poems[1].poem1_au.paused ?
-                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-                            <p ng-if="poems[1].showContent" class="bg_poems_text1_s1">
-                                {{poems[1].poem_cont}}
-                            </p>
+                      <div class="bg_poems_s1">
+                        <p style="text-align: center">Pantun</p>
+                          <input class="comprehension_box_voice_pantun" type="image"
+                                 ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
+                                 ng-click="poems[countPantun].poem1_au.paused ? poems[countPantun].poem1_au.play() : poems[countPantun].poem1_au.pause(); src = poems[countPantun].poem1_au.paused ?                                  'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">
 
-                            <input class="bg_poems_button_s1" ng-if="poems[1].showContent"
-                                   style="width: 50px; margin-left: 5%" type="image"
-                                   ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"
-                                   ng-click="poems[2].poem1_au.paused ? poems[2].poem1_au.play() : poems[2].poem1_au.pause();  poems[2].showContent = true; src = poems[2].poem1_au.paused ?
-                     'templates/home/img/btn/play button.png' : 'templates/home/img/btn/pause button.png'">
-                            <p ng-if="poems[2].showContent" class="bg_poems_text1_s1">
-                                {{poems[2].poem_cont}}
-                            </p>
+                          <p>{{poems[countPantun].poem_cont}}</p>
 
-                        </div>
-                        <div class="buttons0">
-                            <input style="width: 50px" type="image" src='templates/home/img/btn/previous button.png'
-                                   class="buttons1" ng-click="back('stage15')">
-                            <input style="width: 50px" type="image" class="buttons2"
-                                   src='templates/home/img/btn/next button.png' ng-click="next('stage1')">
-                        </div>
+                        <input ng-show="countPantun>0" style="width: 50px; position: relative" type="image" src='templates/home/img/btn/previous button.png'
+                               class="buttons1" ng-click="countPantun = countPantun - 1">
+
+                          <input ng-hide="countPantun>1" style="width: 50px; " type="image"
+                                 class="buttons2" src='templates/home/img/btn/next button.png'
+                                 ng-click="countPantun = countPantun + 1">
+
+
+                            <!--<input class="bg_poems_button_s1" style="width: 50px; margin-left: 5%" type="image"-->
+                                   <!--ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"-->
+                                   <!--ng-click="poems[0].poem1_au.paused ? poems[0].poem1_au.play() : poems[0].poem1_au.pause(); poems[0].showContent1 = true; src = poems[0].poem1_au.paused ?-->
+                     <!--'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">-->
+                            <!--<p ng-if="poems[0].showContent1" class="bg_poems_text1_s1">-->
+                                <!--{{poems[0].poem_cont}}-->
+                            <!--</p>-->
+
+                            <!--<input class="bg_poems_button_s1" ng-if="poems[0].showContent1"-->
+                                   <!--style="width: 50px; margin-left: 5%" type="image"-->
+                                   <!--ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"-->
+                                   <!--ng-click="poems[1].poem1_au.paused ? poems[1].poem1_au.play() : poems[1].poem1_au.pause(); poems[1].showContent1 = true; src = poems[1].poem1_au.paused ?-->
+                     <!--'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">-->
+                            <!--<p ng-if="poems[1].showContent1" class="bg_poems_text1_s1">-->
+                                <!--{{poems[1].poem_cont}}-->
+                            <!--</p>-->
+
+                            <!--<input class="bg_poems_button_s1" ng-if="poems[1].showContent1"-->
+                                   <!--style="width: 50px; margin-left: 5%" type="image"-->
+                                   <!--ng-init="src = 'templates/home/img/btn/play button.png'" ng-src="{{src}}"-->
+                                   <!--ng-click="poems[2].poem1_au.paused ? poems[2].poem1_au.play() : poems[2].poem1_au.pause();  poems[2].showContent1 = true; src = poems[2].poem1_au.paused ?-->
+                     <!--'templates/home/img/btn/pause button.png' : 'templates/home/img/btn/play button.png'">-->
+                            <!--<p ng-if="poems[2].showContent1" class="bg_poems_text1_s1">-->
+                                <!--{{poems[2].poem_cont}}-->
+                            <!--</p>-->
+
+                      </div>
                     </div>
 
                     <!--END         Pantum        poems -->

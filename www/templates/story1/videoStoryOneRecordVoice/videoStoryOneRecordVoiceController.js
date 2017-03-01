@@ -1,9 +1,59 @@
 angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
-  .controller('videoStoryOneRecordVoiceController',  ['$scope', 'ngAudio', function($scope, ngAudio) {
+  .controller('videoStoryOneRecordVoiceController',  ['$scope','ngAudio','$state', function($scope, ngAudio,$state) {
+
+    $scope.goStory0ne = function () {
+      $state.go('story-one');
+    };
+
+    $scope.video_s1 = {
+      mp4: 'templates/story1/video/s1_SN01.mp4'
+    };
+    $scope.video_s2 = {
+      mp4: 'templates/story1/video/s1_SN02.mp4'
+    };
+    $scope.video_s3 = {
+      mp4: 'templates/story1/video/s1_SN03.mp4'
+    };
+    $scope.video_s4 = {
+      mp4: 'templates/story1/video/s1_SN04.mp4'
+    };
+    $scope.video_s5 = {
+      mp4: 'templates/story1/video/s1_SN05.mp4'
+    };
+    $scope.video_s6 = {
+      mp4: 'templates/story1/video/s1_SN06.mp4'
+    };
+    $scope.video_s7 = {
+      mp4: 'templates/story1/video/s1_SN07.mp4'
+    };
+    $scope.video_s8 = {
+      mp4: 'templates/story1/video/s1_SN08.mp4'
+    };
+    $scope.video_s9 = {
+      mp4: 'templates/story1/video/s1_SN09.mp4'
+    };
+    $scope.video_s10 = {
+      mp4: 'templates/story1/video/s1_SN10.mp4'
+    };
+    $scope.video_s11 = {
+      mp4: 'templates/story1/video/s1_SN11.mp4'
+    };
+    $scope.video_s12 = {
+      mp4: 'templates/story1/video/s1_SN12.mp4'
+    };
+    $scope.video_s13 = {
+      mp4: 'templates/story1/video/s1_SN13.mp4'
+    };
+    $scope.video_s14 = {
+      mp4: 'templates/story1/video/s1_SN14.mp4'
+    };
+
+
 
     // START ______ Playlist of voices for characters
     $scope.duration = 100;
     $scope.countQuestion = 0;
+    $scope.countPantun = 0;
     $scope.tracks =
     {
       audio1: ngAudio.load('templates/story1/videoStoryOneRecordVoice/audio_s1/SNU_1.mp3'),
@@ -29,19 +79,32 @@ angular.module('LegendSingapore.videoStoryOneRecordVoice.ctrl', [])
     // $scope.track.play();
     $scope.duration = 100;
     $scope.poems =[{
+      done: false,
       poem1_au:  ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun_SNU_1.mp3'),
-      showContent1: false,
-      poem_cont: 'Pulaunya indah berpasir putih,\n Namanya Temasek haluan dituju; \n Sang Nila Utama semakin gigih, \n Hendak membuka negara baharu.'
+      showContent1: true,
+      poem_cont: 'Pulaunya indah berpasir putih,\n' +
+      ' Namanya Temasek haluan dituju; \n ' +
+      'Sang Nila Utama semakin gigih, \n ' +
+      'Hendak membuka negara baharu.'
     },{
+      done: false,
       poem1_au: ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun_SNU_2.mp3'),
       showContent1: false,
-      poem_cont: 'Hendak bermalam di Kota Kluang, \n   Berjalan jauh bukan kepalang; \n    Semua barangan telah dibuang, \n        Namun badai menjadi penghalang.'
+      poem_cont: 'Hendak bermalam di Kota Kluang, \n ' +
+      'Berjalan jauh bukan kepalang; \n ' +
+      'Semua barangan telah dibuang, \n ' +
+      'Namun badai menjadi penghalang.'
     },{
+      done: false,
       poem1_au: ngAudio.load('templates/story1/videoStoryOneRecordVoice/pantun/Pantun_SNU_3.mp3'),
       showContent1: false,
-      poem_cont: 'Pergi berburu di tengah hutan, \n  Membawa bersama barang keperluan; \n  Mahkota dibuang di tengah lautan, \n  Bahtera selamat  ke tempat tujuan.'
+      poem_cont: 'Pergi berburu di tengah hutan, \n' +
+      'Membawa bersama barang keperluan; \n ' +
+      'Mahkota dibuang di tengah lautan, \n' +
+      'Bahtera selamat  ke tempat tujuan.'
     }];
 //END ______ Poems_story1___
+
 
 
 

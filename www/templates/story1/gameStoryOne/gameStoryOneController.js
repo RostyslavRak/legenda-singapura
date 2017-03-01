@@ -1,4 +1,4 @@
-app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", function ($scope, ngAudio, $interval) {
+app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval","$state", function ($scope, ngAudio, $interval, $state) {
 
   // $scope.duration = 100;
   // $scope.tracks =
@@ -10,7 +10,11 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
   // $scope.track.play();
 
 
-  $scope.stageGame = 0;
+  $scope.goStory0ne = function () {
+    $state.go('story-one');
+  };
+
+  $scope.stageGame = 8;
   $scope.formParams = {};
   $scope.stage = "";
   $scope.formValidation = false;
@@ -19,6 +23,7 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
   $scope.draggableObjects = null;
   $scope.countError = 0;
   $scope.time = 0;
+  $scope.wordError = 1;
   var stop = false;
 
   // Navigation functions
@@ -309,38 +314,45 @@ app.controller("GameStoryOneController", ["$scope", "ngAudio", "$interval", func
     }
     if (_.find($scope.draggableObjects, {"status": false}) == undefined) {
       angular.forEach($scope.droppedObjects, function (drag) {
-        if(drag.id == drag.idS){
+        if (drag.id == drag.idS) {
           drag.err = false;
-        }else {
+        } else {
           drag.err = true;
         }
       });
 
 
-      if($scope.gameOne[$scope.stageGame+1] != undefined){
-        if(_.find($scope.droppedObjects, {"err": true})){
-          $scope.countError ++;
+      if ($scope.gameOne[$scope.stageGame + 1] != undefined) {
 
-          if($scope.countError>=3){
-            $scope.next("stageGameOver")
+        if (_.find($scope.droppedObjects, {"err": true})) {
+          if ($scope.wordError >= 3) {
+            $scope.wordError = 1;
+            $scope.countError++;
+            $scope.stageGame++;
+            showWords();
+          } else {
+            $scope.wordError++;
+            setTimeout(showWords, 2000);
           }
-          console.log( $scope.countError);
-          setTimeout(showWords, 2000);
-        }else {
+        } else {
           $scope.stageGame++;
           showWords()
-
         }
-      }else {
-        if(_.find($scope.droppedObjects, {"err": true})){
-          $scope.countError ++;
-          setTimeout(showWords, 2000);
-        }else {
-          showWords()
+      } else {
+        if (_.find($scope.droppedObjects, {"err": true})) {
+          if ($scope.wordError >= 3) {
+            $scope.wordError = 1;
+            $scope.countError++;
+          } else {
+            $scope.wordError++;
+            setTimeout(showWords, 2000);
+          }
+        } else {
+          stop = true;
+          $scope.next("stageEndGame");
         }
       }
     }
-
   };
 
 }]);
